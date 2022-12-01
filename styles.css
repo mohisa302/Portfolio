@@ -1,38 +1,71 @@
-.main-header {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-page {
   background: #3C3A39;    
-  display: flex;
   border: #3C3A39;
-  border:2px solid goldenrod;
+  display: flex;
+  flex-direction: column;
+}
+
+/*.main-header a:hover{
+  color:white
+}
+*/
+.main-header {
+  align-items: center;
+  height: 92px;
+  display: flex;
+  /*border:10px solid goldenrod;*/
   justify-content: space-between;
 }
 
-.vector {
+.introduction {
   display: flex;
   flex-direction: column;
-  font-size: 30px;
-  column-gap: 1px;
-  padding-right: 30px;
+  align-items: flex-start;
+  background: #1C1A19;
+  height: 590px;
+  /*
+  padding: 120px 24px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 375px;
+  
+  left: 0px;
+  top: 92px;
+*/
 }
 
-.vector1 { 
-    border: #FFFFFF 100%;
+.union {
+  margin-right: 5%;
+}
+
+.main-title {
+
+}
+
+.vector {
+  width: 20px;
+  height: 3px;
+  border: 2px solid #ACB7C3;
+  margin-bottom: 3px;
 }
 
 .header-text { 
   color: #ffffff;
   font-family: Roboto;
-  width: 77px;
-  height: 24px;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;  
-  padding-bottom: 20px;
   padding-left: 30px;
   align-self: flex-end;
   text-align: center;
-}
-
-.header-icon {
-  color: #FFFFFF;
 }
