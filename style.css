@@ -9,7 +9,7 @@ html {
 
 .main-page {
   position: absolute;
-  background: "#3C3A39";
+  background: #3C3A39;
 }
 
 .main-header {
@@ -19,7 +19,7 @@ html {
   display: flex;
   justify-content: space-between;
   width: 375px;
-  background: "#3C3A39";
+  background: #3C3A39;
 }
 
 .page1 {
@@ -32,11 +32,12 @@ html {
   width: 327px;
   height: 470px;
   top: 92px;
-  background: "#1C1A19";
+  background: #1C1A19;
 }
 
 .union {
-  margin-right: 5%;
+  margin-right: 15%;
+  
 }
 
 .main-title {
@@ -48,7 +49,7 @@ html {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: "#FF6B00";
+  color: #FF6B00;
   flex: none;
 }
 
@@ -59,17 +60,14 @@ html {
   font-size: 24px;
   line-height: 32px;
   align-items: center;
-  color: "#FFF5E1";
+  color: #FFF5E1;
 }
 
 .vector {
-  left: 16.67%;
-  right: 16.67%;
-  top: 70.83%;
-  bottom: 29.17%;
   width: 20px;
   height: 3px;
-  border: 2px solid "#ACB7C3";
+  background-color: white;
+  margin-bottom: 4px;
 }
 
 .regular-text {
@@ -80,28 +78,34 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: "#FFFFFF";
+  color: #FFFFFF;
 }
 
 .header-text {
   width: 77px;
   height: 24px;
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: "#FFFFFF";
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 25%;
+  flex-grow: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .social-media {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   width: 200px;
   height: 40px;
-  flex: none;
-  flex-grow: 0;
+  display: flex;
+  align-content: space-between;
 }
 
 .icon {
@@ -111,6 +115,4 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 25px;
-  color: "#eee";
 }
