@@ -7,11 +7,6 @@ html {
   margin: 0;
 }
 
-.main-page {
-  position: absolute;
-  background: #3c3a39;
-}
-
 .main-header {
   position: absolute;
   align-items: center;
@@ -58,12 +53,15 @@ html {
   color: #fff5e1;
 }
 
+.union {
+  margin-right: 10%;
+}
+
 .vector {
   width: 20px;
   height: 3px;
   background-color: #fff;
   margin-bottom: 4px;
-  margin-right: 10%;
 }
 
 .regular-text {
@@ -88,7 +86,7 @@ html {
   align-items: center;
   text-align: center;
   color: #fff;
-  padding-left: 25%;
+  padding-left: 15%;
   flex-grow: 0;
   font-family: 'Roboto', sans-serif;
 }
