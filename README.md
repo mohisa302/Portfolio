@@ -1,4 +1,4 @@
-feature-a
+
 <a name="readme-top"></a>
 <div align="center">
 
@@ -23,8 +23,8 @@ feature-a
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Hello Microverse] <a name="about-project"></a>
-**[Hello Microverse]** is a begining in my Microverse journey!
+# 📖 [Portfolio] <a name="about-project"></a>
+**[Portfolio]** is my web profile:)
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -41,8 +41,7 @@ feature-a
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-new developers can use this project to get familiar with basic programmers tools and templates
-
+you see my working samples and connect with me!
 
 
 ## 👥 Authors <a name="authors"></a>
@@ -84,21 +83,9 @@ I would like to thank my favorite mentor Houda Mzari
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ❓ FAQ <a name="faq"></a>
-- **[How this project help me in my first days?]**
-
-  - [This project includes most of the tools which you are going to use for your codes]
-
-- **[What is Microverse?]**
-
-  - [Microverse is one of the most awesome coding school!]
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Hello Microverse
-Hello Microverse Project
- main
