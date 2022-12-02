@@ -35,10 +35,6 @@ html {
   background: #1c1a19;
 }
 
-.union {
-  margin-right: 10%;
-}
-
 .main-title {
   width: 327px;
   height: 124px;
@@ -67,6 +63,7 @@ html {
   height: 3px;
   background-color: #fff;
   margin-bottom: 4px;
+  margin-right: 10%;
 }
 
 .regular-text {
