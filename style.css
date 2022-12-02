@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&display=swap');
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-page {
+  position: absolute;
+  background: "#3C3A39";
+}
+
+.main-header {
+  position: absolute;
+  align-items: center;
+  height: 92px;
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  background: "#3C3A39";
+}
+
+.page1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 12px;
+  width: 327px;
+  height: 470px;
+  top: 92px;
+  background: "#1C1A19";
+}
+
+.union {
+  margin-right: 5%;
+}
+
+.main-title {
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: "#FF6B00";
+  flex: none;
+}
+
+.job-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  align-items: center;
+  color: "#FFF5E1";
+}
+
+.vector {
+  left: 16.67%;
+  right: 16.67%;
+  top: 70.83%;
+  bottom: 29.17%;
+  width: 20px;
+  height: 3px;
+  border: 2px solid "#ACB7C3";
+}
+
+.regular-text {
+  width: 327px;
+  height: 123px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: "#FFFFFF";
+}
+
+.header-text {
+  width: 77px;
+  height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: "#FFFFFF";
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  flex: none;
+  flex-grow: 0;
+}
+
+.icon {
+  flex-grow: 1;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  color: "#eee";
+}
