@@ -252,7 +252,9 @@ ul {
   border: 1px solid #8993a4;
 }
 
-.link-button :hover, .link-button2 :hover, .sub-bot:hover {
+.link-button :hover,
+.link-button2 :hover,
+.sub-bot :hover {
   color: blue;
 }
 
@@ -276,7 +278,7 @@ ul {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #fff; 
+  color: #fff;
 }
 
 .card {
