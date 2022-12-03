@@ -473,7 +473,7 @@ a {
   margin-top: 30px;
   padding: 0;
   row-gap: 30px;
-  align-items: center; 
+  align-items: center;
 }
 
 .titr {
@@ -485,33 +485,31 @@ a {
   align-items: center;
 }
 
+.fo {
+  margin-left: 20px;
+}
+
 ul.menu {
   display: flex;
   flex-flow: column;
 }
 
-ul.menu li {
+li ul.menu {
   display: flex;
-  flex-flow: column; /* new */
+  flex-flow: column;
 }
 
 li {
   margin: 5px;
 }
 
-.bar {
-  align-content: center;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-}
-
 .ico {
-  margin-left: 0px;
   display: flex;
   column-gap: 10px;
   align-self: center;
   align-content: center;
+  margin-left: 79px;
+  align-items: center;
 }
 
 .shape1 {
@@ -523,7 +521,7 @@ li {
 }
 
 .about-bar {
-   border: 1px solid blue;
+  border: 1px solid blue;
   align-items: center;
   display: flex;
   flex-direction: column;
