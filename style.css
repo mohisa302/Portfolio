@@ -18,12 +18,15 @@ html {
 }
 
 .page1 {
+  row-gap: 1px;
+  background-image: url("back2.png");
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  padding: 120px 24px;
+  padding: 30px 24px;
+  height: 590;
   width: 327px;
   top: 92px;
-  background: #1c1a19;
 }
 
 main {
@@ -69,8 +72,8 @@ main {
 }
 
 .regular-text {
+  margin-bottom: 10px;
   width: 327px;
-  height: 123px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -409,6 +412,7 @@ a {
   flex-direction: column;
   width: 375px;
   background: #1c1a19;
+  height: 1000;
 }
 
 .about-text {
@@ -462,30 +466,52 @@ a {
 }
 
 .lang {
-  align-self: center;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  color: white;
+  margin-top: 30px;
+  padding: 0;
+  row-gap: 30px;
+  align-items: center; 
+}
+
+.titr {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  display: flex;
   align-items: center;
+}
+
+ul.menu {
+  display: flex;
+  flex-flow: column;
+}
+
+ul.menu li {
+  display: flex;
+  flex-flow: column; /* new */
+}
+
+li {
+  margin: 5px;
 }
 
 .bar {
   align-content: center;
   display: flex;
   gap: 20px;
+  flex-direction: column;
 }
 
-.titr {
+.ico {
+  margin-left: 0px;
   display: flex;
-  width: 164px;
-  height: 24px;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-  align-items: center;
-  text-align: center;
+  column-gap: 10px;
+  align-self: center;
+  align-content: center;
 }
 
 .shape1 {
@@ -497,23 +523,23 @@ a {
 }
 
 .about-bar {
+   border: 1px solid blue;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
 .lang-text {
-  width: 162px;
+  width: 114px;
   height: 24px;
-  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 43px;
+  font-size: 22px;
+  color: white;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #fff;
+  font-family: 'Inter', serif;
 }
 
 .shape2 {
