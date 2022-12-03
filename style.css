@@ -252,7 +252,12 @@ ul {
   border: 1px solid #8993a4;
 }
 
+.link-button :hover, .link-button2 :hover, .sub-bot:hover {
+  color: blue;
+}
+
 .link-button {
+  margin-bottom: 5%;
   display: flex;
   align-items: center;
   padding: 12px;
@@ -265,28 +270,13 @@ ul {
 
 .ltext1 {
   display: flex;
-  align-self: center;
-  width: 100px;
-  height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #fff;
-}
-
-.ltext1:hover {
-  display: flex;
-  align-items: center;
-  text-align: justify;
-}
-
-.ltext1:active {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  color: #fff; 
 }
 
 .card {
@@ -486,7 +476,7 @@ a {
   display: flex;
   width: 164px;
   height: 24px;
-  font-family: 'InaiMathi', serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
