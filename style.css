@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap");
 
-
 html {
   box-sizing: border-box;
   padding: 0;
@@ -34,7 +33,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .main-title {
@@ -120,7 +119,7 @@ ul {
 }
 
 .recent-header {
-  display:flex;
+  display: flex;
   padding-top: 30%;
   flex-direction: column;
   align-content: center;
@@ -136,7 +135,7 @@ ul {
   font-size: 40px;
   line-height: 52px;
   align-items: center;
-  color: #1C1A19;
+  color: #1c1a19;
 }
 
 .line {
@@ -148,10 +147,10 @@ ul {
 
 .Works {
   display: grid;
-  grid-template-rows:repeat(8, 12.5) ;
+  grid-template-rows: repeat(8, 12.5);
 }
 
-.work-img{
+.work-img {
   width: 327px;
   height: 237px;
   order: 0;
@@ -169,7 +168,7 @@ ul {
   line-height: 44px;
   display: flex;
   align-items: center;
-  color: #091E42;
+  color: #091e42;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -183,7 +182,7 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
   order: 1;
 }
 
@@ -203,10 +202,7 @@ ul {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #091E42;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  color: #091e42;
 }
 
 .icon1-holder {
@@ -217,8 +213,8 @@ ul {
   padding: 10px 12px;
   width: 49px;
   height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #8993A4;
+  background: #fff;
+  border: 1px solid #8993a4;
 }
 
 .icon2-holder {
@@ -229,8 +225,8 @@ ul {
   padding: 10px 12px;
   width: 56px;
   height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #8993A4;
+  background: #fff;
+  border: 1px solid #8993a4;
 }
 
 .icon3-holder {
@@ -241,10 +237,9 @@ ul {
   padding: 10px 12px;
   width: 95px;
   height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #8993A4;
+  background: #fff;
+  border: 1px solid #8993a4;
 }
-
 
 .icon4-holder {
   box-sizing: border-box;
@@ -254,8 +249,8 @@ ul {
   padding: 10px 12px;
   width: 61px;
   height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #8993A4;
+  background: #fff;
+  border: 1px solid #8993a4;
 }
 
 .link-button {
@@ -264,7 +259,7 @@ ul {
   padding: 12px;
   width: 124px;
   height: 48px;
-  background: #FF6B00;
+  background: #ff6b00;
   border: none;
   order: 4;
 }
@@ -279,7 +274,7 @@ ul {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .ltext1:hover {
@@ -333,12 +328,12 @@ ul {
   display: flex;
   width: 295px;
   height: 81px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #fff;
   padding-top: 30%;
 }
 
@@ -351,7 +346,7 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .cardb {
@@ -360,7 +355,7 @@ ul {
   align-content: space-between;
 }
 
-.bot { 
+.bot {
   width: 37px;
   height: 20px;
   font-family: 'Inter', sans-serif;
@@ -368,7 +363,7 @@ ul {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .button1 {
@@ -380,7 +375,7 @@ ul {
   width: 40px;
   height: 40px;
   background: rgba(255, 255, 255, 0.24);
-  background-size: 10px 20px ;
+  background-size: 10px 20px;
 }
 
 .button2 {
@@ -414,7 +409,7 @@ a {
   margin-bottom: 10%;
   width: 320px;
   height: 48px;
-  background: #FF6B00;
+  background: #ff6b00;
   border: none;
 }
 
@@ -422,13 +417,13 @@ a {
   display: flex;
   flex-direction: column;
   width: 375px;
-  background: #1C1A19;
+  background: #1c1a19;
 }
 
 .about-text {
   width: 327px;
   height: 79px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   font-style: normal;
   align-self: center;
   font-weight: 400;
@@ -436,19 +431,19 @@ a {
   line-height: 88px;
   padding-top: 10%;
   letter-spacing: 0.37px;
-  color: #FF6B00;
+  color: #ff6b00;
 }
 
 .regular-text2 {
   align-self: center;
   width: 327px;
   height: 148px;
-  font-family: 'Inter';
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
 }
 
 .resume {
@@ -456,8 +451,8 @@ a {
   padding: 12px;
   width: 159px;
   height: 48px;
-  background: #FF6B00;
-  color: #FFFFFF;
+  background: #ff6b00;
+  color: #fff;
   border: none;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -470,7 +465,7 @@ a {
 
 .line2 {
   margin: 50% 0 20%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #fff;
   align-self: center;
   width: 80%;
 }
@@ -492,13 +487,12 @@ a {
   display: flex;
   width: 164px;
   height: 24px;
-  font-family: 'InaiMathi';
+  font-family: 'InaiMathi', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFFFF;
-  display: flex;
+  color: #fff;
   align-items: center;
   text-align: center;
 }
@@ -507,7 +501,7 @@ a {
   display: flex;
   width: 18px;
   height: 18px;
-  background: #FF6B00;
+  background: #ff6b00;
   transform: rotate(-45deg);
 }
 
@@ -520,7 +514,7 @@ a {
 .lang-text {
   width: 162px;
   height: 24px;
-  font-family: 'Inter';
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -528,7 +522,7 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .shape2 {
@@ -546,19 +540,19 @@ a {
 }
 
 .contact {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-text {
   padding-top: 10%;
   width: 327px;
   height: 216px;
-  font-family: 'Inter';
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
-
