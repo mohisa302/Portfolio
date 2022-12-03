@@ -352,6 +352,8 @@ ul {
 
 .cardb {
   display: flex;
+  flex-direction: row;
+  margin: 0;
   padding: 0;
   column-gap: 10px;
   margin: 0 0 30px 10px;
