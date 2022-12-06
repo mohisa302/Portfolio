@@ -104,7 +104,18 @@ ul {
   width: 200px;
   height: 40px;
   display: flex;
-  align-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.social-media-under {
+  margin-top: 5px;
+  margin-left: 40px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 .icon {
@@ -587,6 +598,12 @@ li {
   color: #979493;
 }
 
+.form-line {
+  margin-top: 100px;
+  height: 1px;
+  background: #dbd8d7;
+}
+
 .form-line2 {
   height: 1px;
   background: #dbd8d7;
@@ -620,11 +637,13 @@ li {
   background: #ff6b00;
   border: none;
   align-self: center;
-  margin-left: 65px;
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   width: 327px;
+  row-gap: 10px;
   border-radius: 1em;
 }
 
