@@ -350,7 +350,7 @@ ul {
   flex-direction: row;
   padding: 0;
   column-gap: 10px;
-  margin: 0 0 0px 10px;
+  margin: 0 0 0 10px;
 }
 
 .bot {
@@ -509,7 +509,7 @@ li {
   column-gap: 10px;
   align-self: center;
   align-content: center;
-  margin-left:60px;
+  margin-left: 60px;
   align-items: center;
 }
 
@@ -599,7 +599,6 @@ li {
   padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
-  
   resize: none;
   outline: none;
   font-family: 'Inter', sans-serif;
