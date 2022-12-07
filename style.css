@@ -31,16 +31,15 @@ body {
   display: flex;
   flex-direction: column;
   /* padding: 30px 24px; */
+  align-items: center;
   height: 590;
   width: 379px;
-  align-items: center;
 }
 
 main {
   padding: 0;
   margin: 0;
   width: 375px;
-  height: 6715px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -558,6 +557,10 @@ li {
   font-family: 'Inter', serif;
 }
 
+.desktop-header {
+  display: none;
+}
+
 .shape2 {
   width: 18px;
   height: 18px;
@@ -667,15 +670,51 @@ label {
   main {
     width: 1440px;
   }
+
   .page1 {
     background-image: url("/img/desktop-ver.png");
     background-repeat: no-repeat;
     width: 1440px;
     height: 852px;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+  }
+
+  .social-media {
+    order: 1;
   }
 
   .main-header {
     width: 1440px;
     height: 72px;
+  }
+
+  .desktop-main {
+    order: 2;
+  }
+
+  .desktop-header {
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    color: #FFFFFF;
+    column-gap: 30px;
+    justify-content: space-around;
+    margin-right: 70px;
+  }
+
+  .union {
+    display: none;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
   }
 }
