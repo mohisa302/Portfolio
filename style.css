@@ -661,3 +661,21 @@ label {
   width: 90px;
   text-align: right;
 }
+
+@media screen and (min-width: 768px) {
+
+  main {
+    width: 1440px;
+  }
+  .page1 {
+    background-image: url("/img/desktop-ver.png");
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 852px;
+  }
+
+  .main-header {
+    width: 1440px;
+    height: 72px;
+  }
+}
