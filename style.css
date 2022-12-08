@@ -131,10 +131,18 @@ ul {
 }
 
 .icon {
+  flex-grow: 1;
   width: 26px;
   height: 26px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  transition-duration: 3s;
+}
+
+.icon:hover {
+  width: 100%;
+  height: 100%;
 }
 
 .icon2 {
