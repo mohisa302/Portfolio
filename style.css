@@ -6,12 +6,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 html,
 body {
   width: 100%;
@@ -131,10 +125,18 @@ ul {
 }
 
 .icon {
+  flex-grow: 1;
   width: 26px;
   height: 26px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  transition-duration: 3s;
+}
+
+.icon:hover {
+  width: 150%;
+  height: 150%;
 }
 
 .icon2 {
@@ -188,6 +190,12 @@ ul {
   order: 0;
   align-items: center;
   align-self: center;
+  transition-duration: 2s;
+}
+
+.work-img:hover {
+  width: 50%;
+  height: 50%;
 }
 
 .wtext1 {
@@ -243,9 +251,7 @@ ul {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-content: center;
-  align-items: center;
-  padding: 10px 12px;
+  padding: 6px 8px;
   width: 49px;
   height: 40px;
   background: #fff;
@@ -255,6 +261,7 @@ ul {
 .icon2-holder {
   box-sizing: border-box;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
@@ -281,17 +288,11 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 12px;
+  padding: 10px 8px;
   width: 61px;
   height: 40px;
   background: #fff;
   border: 1px solid #8993a4;
-}
-
-.link-button :hover,
-.link-button2 :hover,
-.sub-bot :hover {
-  color: blue;
 }
 
 .link-button {
@@ -304,6 +305,18 @@ ul {
   background: #ff6b00;
   border: none;
   order: 4;
+  transition-duration: 2s;
+}
+
+.link-button2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+  width: 330px;
+  height: 48px;
+  background: #ff6b00;
+  border: none;
+  transition-duration: 2s;
 }
 
 .ltext1 {
@@ -383,7 +396,10 @@ ul {
   flex-direction: row;
   padding: 0;
   column-gap: 9px;
-  margin: -5px 20px 3px 2px;
+  margin: -4px -1px 19px 3px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
 }
 
 .bot {
@@ -394,22 +410,25 @@ ul {
   font-size: 15px;
   line-height: 20px;
   color: #fff;
+  transition-duration: 2s;
 }
 
 .button1 {
   align-content: center;
   display: flex;
   align-items: center;
-  padding: 9px 14px;
+  padding: 11px 14px;
   width: 40px;
   height: 40px;
   background: rgba(255, 255, 255, 0.24);
   background-size: 10px 20px;
+  justify-content: center;
 }
 
 .button2 {
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 10px 12px;
   width: 95px;
   height: 40px;
@@ -422,22 +441,14 @@ a {
 
 .button3 {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
-  padding: 10px 12px;
+  padding: 10px 7px;
   width: 61px;
+  align-content: center;
   height: 40px;
   background: rgba(255, 255, 255, 0.24);
-}
-
-.link-button2 {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10%;
-  width: 327px;
-  height: 48px;
-  background: #ff6b00;
-  border: none;
 }
 
 .About-myself {
@@ -489,6 +500,7 @@ a {
   line-height: 24px;
   text-align: center;
   margin-left: 6%;
+  transition-duration: 2s;
 }
 
 .line2 {
@@ -663,6 +675,7 @@ li {
   background: #ff6b00;
   border: none;
   align-self: center;
+  transition-duration: 2s;
 }
 
 form {
@@ -682,10 +695,25 @@ label {
   text-align: right;
 }
 
+.link-button:hover,
+.link-button2:hover,
+.resume:hover,
+.sub-bot:hover {
+  color: blue;
+  background: wheat;
+  border: blue;
+}
+
 @media screen and (min-width: 768px) {
   main {
     width: 768px;
     align-items: center;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .page1 {
@@ -696,6 +724,10 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: left;
+  }
+
+  .envelope {
+    margin-top: -20px;
   }
 
   .social-media {
@@ -808,7 +840,13 @@ label {
   }
 
   .link-button2 {
-    display: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+    width: 327px;
+    height: 48px;
+    background: #ff6b00;
+    border: none;
   }
 
   .li {
@@ -940,7 +978,6 @@ label {
   .card4,
   .card6 {
     background: url("/img/card4.png");
-    background-size: 350px 300px;
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 327px 386px;
@@ -951,7 +988,6 @@ label {
 
   .card1 {
     background: url("/img/card2.png");
-    background-size: 350px 300px;
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 327px 386px;
@@ -967,20 +1003,10 @@ label {
   .card1 .cardb {
     display: none;
   }
-  
+
   .card1 .cardp {
     display: none;
   }
-
-  .link-button2 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10%;
-    width: 327px;
-    height: 48px;
-    background: #ff6b00;
-    border: none;
-  }  
 
   .card2 .link-button2 {
     display: none;
@@ -991,6 +1017,7 @@ label {
     align-content: center;
     align-items: center;
   }
+
   .card3 .link-button2 {
     display: none;
   }
