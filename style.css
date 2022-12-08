@@ -6,6 +6,12 @@ html {
   box-sizing: border-box;
 }
 
+body{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
 html,
 body {
   width: 100%;
@@ -16,9 +22,11 @@ body {
 }
 
 .main-header {
-  align-items: center;
   height: 92px;
   display: flex;
+  text-align: center;
+  align-self: center;
+  align-content: center;
   justify-content: space-between;
   width: 375px;
   background: #3c3a39;
@@ -70,6 +78,7 @@ main {
 
 .union {
   margin-right: 10%;
+  margin-top: 20px;
 }
 
 .vector {
@@ -91,7 +100,7 @@ main {
 
 .header-text {
   width: 77px;
-  height: 24px;
+  height: 60px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -101,6 +110,9 @@ main {
   color: #fff;
   padding-left: 5%;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  text-align: center;
+  align-self: center;
 }
 
 ul {
@@ -664,7 +676,7 @@ label {
   text-align: right;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
   main {
     width: 1440px;
@@ -706,6 +718,9 @@ label {
     column-gap: 30px;
     justify-content: space-around;
     margin-right: 70px;
+    display: flex;
+    text-align: center;
+    align-self: center;
   }
 
   .union {
@@ -768,6 +783,10 @@ label {
     grid-column: 2/3;
  }
 
+ .recent-work {
+  display: flex;
+  flex-direction: column;
+ }
  .work1 {
   display: flex;
  }
@@ -787,5 +806,29 @@ label {
 
   .li {
     margin: 0;
+  }
+
+  .About-myself {
+    display: grid;
+
+    /* flex-direction: column; */
+    padding: 0;
+    margin: 0;
+    background: #1c1a19;
+    background-image: url("/img/about.png");
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 1000;
+    /* display: flex;
+    align-items: flex-start;
+    align-content: flex-start; */
+  }
+
+  .about-text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .regular-text2 {
   }
 }
