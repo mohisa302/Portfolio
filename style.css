@@ -383,7 +383,7 @@ ul {
   flex-direction: row;
   padding: 0;
   column-gap: 9px;
-  margin: 0 0 0 9px;
+  margin: -5px 20px 3px 2px;
 }
 
 .bot {
@@ -400,7 +400,7 @@ ul {
   align-content: center;
   display: flex;
   align-items: center;
-  padding: 9px 5px;
+  padding: 9px 14px;
   width: 40px;
   height: 40px;
   background: rgba(255, 255, 255, 0.24);
@@ -923,5 +923,87 @@ label {
     grid-column: 1/4;
     grid-row: 2/3;
     margin: 0;
+  }
+
+  .card2,
+  .card5 {
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("/img/card3.png");
+    background-repeat: no-repeat;
+    line-height: 75px;
+    background-size: 327px 386px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .card3,
+  .card4,
+  .card6 {
+    background: url("/img/card4.png");
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    line-height: 75px;
+    background-size: 327px 386px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .card1 {
+    background: url("/img/card2.png");
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    line-height: 75px;
+    background-size: 327px 386px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+
+  .card1 .cardt {
+    display: none;
+  }
+
+  .card1 .cardb {
+    display: none;
+  }
+  
+  .card1 .cardp {
+    display: none;
+  }
+
+  .link-button2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+    width: 327px;
+    height: 48px;
+    background: #ff6b00;
+    border: none;
+  }  
+
+  .card2 .link-button2 {
+    display: none;
+  }
+
+  .ltext1 {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+  }
+  .card3 .link-button2 {
+    display: none;
+  }
+
+  .card4 .link-button2 {
+    display: none;
+  }
+
+  .card5 .link-button2 {
+    display: none;
+  }
+
+  .card6 .link-button2 {
+    display: none;
   }
 }
