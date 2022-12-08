@@ -193,7 +193,7 @@ ul {
   transition-duration: 2s;
 }
 
-.work-img:hover{
+.work-img:hover {
   width: 50%;
   height: 50%;
 }
@@ -308,13 +308,15 @@ ul {
   transition-duration: 2s;
 }
 
-.link-button:hover,
-.link-button2:hover,
-.resume:hover,
-.sub-bot:hover {
-  color: blue;
-  background: wheat;
-  border: blue;
+.link-button2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+  width: 330px;
+  height: 48px;
+  background: #ff6b00;
+  border: none;
+  transition-duration: 2s;
 }
 
 .ltext1 {
@@ -444,21 +446,9 @@ a {
   align-items: center;
   padding: 10px 7px;
   width: 61px;
-  align-items: center;
   align-content: center;
   height: 40px;
   background: rgba(255, 255, 255, 0.24);
-}
-
-.link-button2 {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10%;
-  width: 330px;
-  height: 48px;
-  background: #ff6b00;
-  border: none;
-  transition-duration: 2s;
 }
 
 .About-myself {
@@ -705,6 +695,15 @@ label {
   text-align: right;
 }
 
+.link-button:hover,
+.link-button2:hover,
+.resume:hover,
+.sub-bot:hover {
+  color: blue;
+  background: wheat;
+  border: blue;
+}
+
 @media screen and (min-width: 768px) {
   main {
     width: 768px;
@@ -726,7 +725,7 @@ label {
     flex-direction: row;
     justify-content: left;
   }
-  
+
   .envelope {
     margin-top: -20px;
   }
@@ -841,7 +840,13 @@ label {
   }
 
   .link-button2 {
-    display: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+    width: 327px;
+    height: 48px;
+    background: #ff6b00;
+    border: none;
   }
 
   .li {
@@ -973,7 +978,6 @@ label {
   .card4,
   .card6 {
     background: url("/img/card4.png");
-    background-size: 350px 300px;
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 327px 386px;
@@ -984,7 +988,6 @@ label {
 
   .card1 {
     background: url("/img/card2.png");
-    background-size: 350px 300px;
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 327px 386px;
@@ -1005,16 +1008,6 @@ label {
     display: none;
   }
 
-  .link-button2 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10%;
-    width: 327px;
-    height: 48px;
-    background: #ff6b00;
-    border: none;
-  }  
-
   .card2 .link-button2 {
     display: none;
   }
@@ -1024,6 +1017,7 @@ label {
     align-content: center;
     align-items: center;
   }
+
   .card3 .link-button2 {
     display: none;
   }
