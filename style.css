@@ -188,6 +188,11 @@ ul {
   order: 0;
   align-items: center;
   align-self: center;
+  transition-duration: 2s;
+}
+.work-img:hover{
+  width: 50%;
+  height: 50%;
 }
 
 .wtext1 {
