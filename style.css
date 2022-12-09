@@ -28,7 +28,7 @@ body {
 
 .page1 {
   row-gap: 1px;
-  background-image: url("/img/back2.png");
+  background-image: url("./img/back2.png");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -331,7 +331,7 @@ ul {
 }
 
 .card {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("/img/img2.png");
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./img/img2.png");
   background-repeat: no-repeat;
   line-height: 75px;
   background-size: 327px 386px;
@@ -717,7 +717,7 @@ label {
   }
 
   .page1 {
-    background-image: url("/img/desktop-ver.png");
+    background-image: url("./img/desktop-ver.png");
     background-repeat: no-repeat;
     width: 1440px;
     height: 852px;
@@ -857,7 +857,7 @@ label {
     padding: 0;
     margin: 0;
     background: #262626;
-    background-image: url("/img/about.png");
+    background-image: url("./img/about.png");
     background-repeat: no-repeat;
     width: 1440px;
     height: 1195px;
@@ -965,7 +965,7 @@ label {
 
   .card2,
   .card5 {
-    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("/img/card3.png");
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./img/card3.png");
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 327px 386px;
@@ -977,7 +977,7 @@ label {
   .card3,
   .card4,
   .card6 {
-    background: url("/img/card4.png");
+    background: url("./img/card4.png");
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 327px 386px;
@@ -987,7 +987,7 @@ label {
   }
 
   .card1 {
-    background: url("/img/card2.png");
+    background: url("./img/card2.png");
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 327px 386px;
