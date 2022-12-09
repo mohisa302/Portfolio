@@ -22,13 +22,13 @@ body {
   align-self: center;
   align-content: center;
   justify-content: space-between;
-  width: 375px;
+  width: 373px;
   background: #3c3a39;
 }
 
 .page1 {
   row-gap: 1px;
-  background-image: url("/img/back2.png");
+  background-image: url("./img/back2.png");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,6 @@ main {
 }
 
 .header-text {
-  width: 77px;
   height: 60px;
   font-style: normal;
   font-weight: 700;
@@ -312,7 +311,7 @@ ul {
   display: flex;
   align-items: center;
   margin-bottom: 10%;
-  width: 330px;
+  width: 327px;
   height: 48px;
   background: #ff6b00;
   border: none;
@@ -331,7 +330,7 @@ ul {
 }
 
 .card {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("/img/img2.png");
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./img/img2.png");
   background-repeat: no-repeat;
   line-height: 75px;
   background-size: 327px 386px;
@@ -362,6 +361,14 @@ ul {
 
 .card6 {
   order: 7;
+}
+
+.cardt-des {
+  display: none;
+}
+
+.cardp-des {
+  display: none;
 }
 
 .cardt {
@@ -417,7 +424,7 @@ ul {
   align-content: center;
   display: flex;
   align-items: center;
-  padding: 11px 14px;
+  padding: 10px 14px;
   width: 40px;
   height: 40px;
   background: rgba(255, 255, 255, 0.24);
@@ -457,6 +464,7 @@ a {
   width: 375px;
   background: #1c1a19;
   height: 1000;
+  padding-bottom: 5%;
 }
 
 .about-text {
@@ -519,7 +527,7 @@ a {
   padding: 0;
   row-gap: 30px;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .titr {
@@ -529,10 +537,6 @@ a {
   font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
-}
-
-.fo {
-  margin-left: 20px;
 }
 
 ul.menu {
@@ -554,7 +558,7 @@ li {
   column-gap: 10px;
   align-self: center;
   align-content: center;
-  margin-left: 60px;
+  margin-left: 44px;
   align-items: center;
 }
 
@@ -602,6 +606,7 @@ li {
   height: 18px;
   background: #ff6b00;
   border-radius: 150px;
+  margin-left: 20px;
 }
 
 .contact {
@@ -706,28 +711,38 @@ label {
 
 @media screen and (min-width: 768px) {
   main {
-    width: 768px;
-    align-items: center;
-  }
-
-  body {
+    width: 100%;
+    align-content: center;
     display: flex;
-    align-items: center;
-    flex-direction: column;
   }
 
   .page1 {
-    background-image: url("/img/desktop-ver.png");
+    background-image: url("./img/desktop-ver.png");
+    margin: 0;
     background-repeat: no-repeat;
-    width: 1440px;
+    background-size: 100% 100%;
+    width: 100%;
     height: 852px;
     display: flex;
     flex-direction: row;
     justify-content: left;
   }
 
+  .cardp-des {
+    display: flex;
+    padding-left: 5%;
+    color: #fff;
+    width: 350px;
+    height: 47px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .envelope {
-    margin-top: -20px;
+    margin-top: -35%;
   }
 
   .social-media {
@@ -740,7 +755,7 @@ label {
   }
 
   .main-header {
-    width: 1440px;
+    width: 100%;
     height: 72px;
   }
 
@@ -769,16 +784,20 @@ label {
   }
 
   .icon {
+    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    align-items: center;
   }
 
   .recent-work {
-    width: 1440px;
+    align-self: center;
+    width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
   }
 
   .recent-header {
@@ -786,14 +805,33 @@ label {
     padding: 0;
     display: flex;
     flex-direction: row;
+    column-gap: 2%;
     justify-content: flex-start;
   }
 
   .Works {
+    align-self: center;
+    display: grid;
     padding: 0;
-    grid-template-columns: 350px 350px 369px;
-    grid-template-rows: 500px 410px 480px;
+    grid-template-columns: 387px 384px 369px;
+    grid-template-rows: 663px 321px 622px;
     align-items: center;
+  }
+
+  .regular-text {
+    width: 416px;
+    height: 190px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .job-title {
+    width: 566px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
   }
 
   .card {
@@ -842,11 +880,13 @@ label {
   .link-button2 {
     display: flex;
     align-items: center;
-    margin-bottom: 10%;
-    width: 327px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     height: 48px;
     background: #ff6b00;
     border: none;
+    justify-content: center;
   }
 
   .li {
@@ -854,31 +894,31 @@ label {
   }
 
   .About-myself {
+    align-self: center;
     padding: 0;
     margin: 0;
-    background: #262626;
-    background-image: url("/img/about.png");
+    background-image: url("./img/about.png");
     background-repeat: no-repeat;
-    width: 1440px;
-    height: 1195px;
-    flex-direction: column;
+    background-size: 100% 100%;
+    width: 100%;
     display: flex;
     align-items: flex-start;
+    padding-bottom: 5%;
   }
 
   .about-text-part {
     row-gap: 20px;
-    margin-left: 2%;
+    margin-left: 6%;
     display: flex;
     flex-direction: column;
   }
 
   .regular-text2 {
-    width: 450px;
+    width: 583px;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    height: 148px;
+    height: 120px;
   }
 
   .about-text {
@@ -894,38 +934,38 @@ label {
   }
 
   .line2 {
-    width: 1156px;
+    width: 100%;
     margin: 0;
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
     margin-bottom: 10%;
     align-self: flex-start;
   }
 
   ul.menu {
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
-    column-gap: 35%;
+    column-gap: 20%;
+    margin-left: 3%;
   }
 
   .lang {
     align-content: center;
     align-items: flex-start;
+    margin-right: 0;
   }
 
   ul.lang {
     align-content: center;
-    margin-left: 25%;
-  }
-
-  .ico {
-    align-items: none;
+    margin-left: 20%;
   }
 
   .fo {
-    margin-left: -25%;
+    margin: 0;
   }
 
   .contact {
@@ -933,17 +973,17 @@ label {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 400px 648px 100px 100px;
+    grid-template-columns: 390px 613px 100px 100px;
     grid-template-rows: 550px 10px 50px;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
     margin-top: 10%;
-    width: 1440px;
   }
 
   .contact-text {
     padding: 0;
     margin: 0;
+    width: 336px;
     color: #262626;
     text-align: left;
   }
@@ -957,54 +997,60 @@ label {
   }
 
   .form-line {
-    width: 1440px;
-    grid-column: 1/4;
+    width: 100%;
+    grid-column: 1/5;
     grid-row: 2/3;
     margin: 0;
   }
 
   .card2,
   .card5 {
-    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("/img/card3.png");
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./img/card3.png");
     background-repeat: no-repeat;
     line-height: 75px;
-    background-size: 327px 386px;
+    background-size: 369px 435px;
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: flex-end;
   }
 
   .card3,
   .card4,
   .card6 {
-    background: url("/img/card4.png");
+    background: url("./img/card4.png");
     background-repeat: no-repeat;
     line-height: 75px;
-    background-size: 327px 386px;
+    background-size: 369px 435px;
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: flex-end;
   }
 
   .card1 {
-    background: url("/img/card2.png");
+    background: url("./img/card2.png");
     background-repeat: no-repeat;
     line-height: 75px;
-    background-size: 327px 386px;
+    background-size: 369px 435px;
     display: flex;
     flex-direction: column-reverse;
     align-content: center;
   }
 
-  .card1 .cardt {
-    display: none;
+  .cardb {
+    margin: 27px 0 5px 14px;
   }
 
   .card1 .cardb {
     display: none;
   }
 
-  .card1 .cardp {
+  .cardp {
+    display: none;
+  }
+
+  .cardt {
     display: none;
   }
 
@@ -1013,7 +1059,6 @@ label {
   }
 
   .ltext1 {
-    align-self: center;
     align-content: center;
     align-items: center;
   }
@@ -1026,8 +1071,25 @@ label {
     display: none;
   }
 
+  .cardt-des {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    padding-left: 5%;
+  }
+
   .card5 .link-button2 {
     display: none;
+  }
+
+  .ko {
+    margin-left: -5%;
   }
 
   .card6 .link-button2 {
