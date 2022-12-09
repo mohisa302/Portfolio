@@ -1,4 +1,4 @@
-
+feature-a
 <a name="readme-top"></a>
 <div align="center">
 
@@ -23,14 +23,15 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Protofilo] <a name="about-project"></a>
-**[Protofilo]** is everything you want to know about me!
+# 📖 [Protofilio] <a name="about-project"></a>
+**[Protofilio]** everything you want to know about me!
 
 
 ## 🛠 Built With <a name="built-with"></a>
 ### Key Features <a name="key-features"></a>
-- **[using linters]**
-
+- **using linters**
+- **both mobile and desktop version**
+- 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -40,8 +41,8 @@
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
+you can know me from here...
 
-you can use this to know me more!
 
 
 ## 👥 Authors <a name="authors"></a>
@@ -83,9 +84,10 @@ I would like to thank my favorite mentor Houda Mzari
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## ❓ FAQ <a name="faq"></a>
+
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-

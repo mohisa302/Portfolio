@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="stylesheet" href="style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>first mobile app</title>
     </head>
 
@@ -12,6 +12,13 @@
        
             <header class="main-header">
                 <a href="#" class="header-text">John Doe</a>
+                <div class="desktop-header"> 
+                    <div>Protofilio</div>
+                    <div> About</div>
+                    <div> Contact</div>
+                    <a href="mohisadeghi302@gmail.com">
+                        <img  class="envelope" src="./img/env.png" alt="email icon"></a>
+                </div>    
                 <nav class="union">
                     <div class="vector"></div>
                     <div class="vector"></div>
@@ -20,67 +27,72 @@
             </header>
     <main> 
         <section class="page1">
-            <h1 class="main-title">Hey There.<br>I'm Alex</h1>
+
+            <div class="desktop-main">       
+            <h1 class="main-title">Hey There.<br>I'm Mohi</h1>
             <h2 class="job-title">I'm a Software Developer</h2>
             <p class="regular-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                 don’t hestiate to contact me.</p>
+            </div>
                 <div class="social-media">
                     <ul class="icon">
                         <li>
                         <a href="https://github.com/mohisa302">
-                            <img src="/img/icon1.png" alt="github icon"></a>
+                            <img src="./img/icon1.png" alt="github icon"></a>
                         </li>
                         <li >
                             <a href="https://www.linkedin.com/in/rachelisaac13">
-                                <img src="/img/icon2.png" alt="linkedin icon"></a>
+                                <img src="./img/icon2.png" alt="linkedin icon"></a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="/img/icon3.png" alt="github icon"></a>
+                                <img src="./img/icon3.png" alt="github icon"></a>
                         </li>
                         <li>
                             <a href="https://twitter.com/Kholochelam">
-                                <img src="/img/icon4.png" alt="twitter icon"></a>
+                                <img src="./img/icon4.png" alt="twitter icon"></a>
                         </li>
                         <li>
                             <a href="#">
-                            <img src="/img/icon5.png" alt="Medium icon"></a>
+                            <img src="./img/icon5.png" alt="Medium icon"></a>
                         </li>
                     </ul>
                 </div>  
         </section>
 
-            <!-- Recent works -->
-    
         <section class="recent-work">
             <div class="recent-header">
                 <div class="works_header-text">MY Recent Works</div>
                 <div class="line"></div>
             </div>
             <section class="Works">
-                <img class="work-img" src='/img/img1.png' alt="project img"> 
-                <h3 class="wtext1">Multi-Post Stories</h3>
-                <p class="wtext2"> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s,
+                <div class="work1">
+                    <img class="work-img" src='./img/img1.png' alt="project img"> 
+                </div>
+                <div class="work2">
+                    <h3 class="wtext1">Multi-Post Stories</h3>
+                    <p class="wtext2"> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s,
                      when an unknown printer took a standard dummy text.</p>  
-                <ul class="bottun"> 
-                    <li class="icon1-holder">
-                        <nav class="icon1">css</nav>
-                    </li>
-                    <li class="icon2-holder">
-                        <nav class="icon1">html</nav>
-                    </li>
-                    <li class="icon3-holder">
-                        <nav class="icon1">bootstrap</nav>
-                    </li>
+                    <ul class="bottun"> 
+                        <li class="icon1-holder">
+                            <nav class="icon1">css</nav>
+                        </li>
+                        <li class="icon2-holder">
+                            <nav class="icon1">html</nav>
+                        </li>
+                        <li class="icon3-holder">
+                            <nav class="icon1">bootstrap</nav>
+                        </li>
                     <li class="icon4-holder">
                         <nav class="icon1">Ruby</nav>
                     </li>
-                </ul> 
+                </ul>           
                 <button class="link-button" type="button">
                     <a class="ltext1" href="#"> See Project </a>  
                 </button> 
+            </div>
 
-                    <div class="card card1">
+                <div class="card card1">
                        <title class="cardt" >Profesional Art Printing Data</title>
                        <p class="cardp">A daily selection of privately personalized reads; no accounts or sign-ups required.
                          has been the industry's standard</p>
@@ -96,6 +108,10 @@
                     
                     <div class="card card2">
                         <title class="cardt" >Profesional Art Printing Data</title>
+                        <title class="cardt-des">Data</title>
+                        <title class="cardt-des">Healthcare</title>
+                        <p class="cardp-des">A daily selection of privately personalized reads; no accounts or sign-ups required.
+                             has been the industry's standard</p>
                         <p class="cardp">A daily selection of privately personalized reads; no accounts or sign-ups required.
                           has been the industry's standard</p>
                          <ul class="cardb">
@@ -110,6 +126,9 @@
 
                     <div class="card card3">
                         <title class="cardt" >Profesional Art Printing Data</title>
+                        <title class="cardt-des">Website Protfolio</title>
+                        <p class="cardp-des">A daily selection of privately personalized reads; no accounts or sign-ups required.
+                            has been the industry's standard</p>
                         <p class="cardp">A daily selection of privately personalized reads; no accounts or sign-ups required.
                           has been the industry's standard</p>
                          <ul class="cardb">
@@ -123,12 +142,16 @@
                     </div>
 
                     <div class="card card4">
-                        <title class="cardt" >Profesional Art Printing Data</title>
+                        <title class="cardt">Profesional Art Printing Data</title>
+                        <title class="cardt-des">Profesional Art Printing </title> 
+                        <title class="cardt-des">Data</title>
                         <p class="cardp">A daily selection of privately personalized reads; no accounts or sign-ups required.
                           has been the industry's standard</p>
-                         <ul class="cardb">
-                             <li class="bot button1">html</li>
-                             <li class="bot button2">bootstrap</li>
+                          <p class="cardp-des">A daily selection of privately personalized reads; no accounts or sign-ups required.
+                              has been the industry's standard</p>
+                            <ul class="cardb">
+                                  <li class="bot button1">html</li>
+                                  <li class="bot button2">bootstrap</li>
                              <li class="bot button3">Ruby</li>
                          </ul>
                          <button class="link-button2" type="button">
@@ -138,6 +161,10 @@
 
                      <div class="card card5">
                         <title class="cardt" >Profesional Art Printing Data</title>
+                        <title class="cardt-des">Data Dashboarde</title>
+                        <title class="cardt-des">Healthcare</title>
+                        <p class="cardp-des">A daily selection of privately personalized reads; no accounts or sign-ups required.
+                            has been the industry's standard</p>
                         <p class="cardp">A daily selection of privately personalized reads; no accounts or sign-ups required.
                           has been the industry's standard</p>
                          <ul class="cardb">
@@ -152,6 +179,9 @@
 
                      <div class="card card6">
                         <title class="cardt" >Profesional Art Printing Data</title>
+                        <title class="cardt-des">Website Protfolio</title>
+                        <p class="cardp-des">A daily selection of privately personalized reads; no accounts or sign-ups required.
+                             has been the industry's standard</p>
                         <p class="cardp">A daily selection of privately personalized reads; no accounts or sign-ups required.
                           has been the industry's standard</p>
                           <ul class="cardb">
@@ -166,15 +196,14 @@
                     </section>     
                 </section>
                 
-                <!--About Me-->
                 <section class="About-myself">
-                    <h1 class="about-text">About me</h1>
-                    <p class="regular-text2">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
+                    <div class="about-text-part">
+                        <h1 class="about-text">About me</h1>
+                        <p class="regular-text2">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
                         don’t hestiate to contact me.</p>
                         <button class="resume" type="button">Get My Resume</button>
-                        <div class="line2"></div>
-                        
-                        
+                    </div>  
+                    <div class="line2"></div>
                         <ul class="menu">
                             <li>
                             <nav class="ico">
@@ -201,9 +230,9 @@
                                 </ul>
                                 </li>
                                 <li>
-                                    <nav class="ico">
-                                        <nav class="fo lang shape3"></nav>
-                                        <h2 class="lang">Skills</h2>
+                                    <nav class="fo ico">
+                                        <nav class="lang shape3"></nav>
+                                        <h2 class="ki lang">Skills</h2>
                                     </nav>
                                     <ul class="lang">
                                         <li>Codekit</li>
@@ -213,7 +242,7 @@
                                         <li>Terminal</li>
                                     </ul>
                                     </li>
-                                </ul>
+                        </ul>
             </div>
         </section>  
         <footer class="contact">
@@ -227,28 +256,28 @@
                     <textarea class="form-text2" name="comment" placeholder="Enter text here" maxlength="500"></textarea>
                     <button class="ltext1 sub-bot" type="submit">Get in touch</button>
                 </form>
-                <div class="form-line"></div>
-                <div class="social-media-under">
-                    <ul class="icon">
-                    <li>
+                <div class="form-line"></div> 
+                <div class="social-media">
+                    <ul class="icon2">
+                        <li>
                         <a href="https://github.com/mohisa302">
-                            <img src="/img/git-dark.png" alt="github icon"></a>
+                            <img src="./img/git-dark.png" alt="github icon"></a>
                         </li>
                         <li >
                             <a href="https://www.linkedin.com/in/rachelisaac13">
-                                <img src="/img/link-dark.png" alt="linkedin icon"></a>
+                                <img src="./img/link-dark.png" alt="linkedin icon"></a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="/img/v-dark.png" alt="github icon"></a>
+                                    <img src="./img/v-dark.png" alt="github icon"></a>
                                 </li>
                                 <li>
                                     <a href="https://twitter.com/Kholochelam">
-                                        <img src="/img/twi-dark.png" alt="twitter icon"></a>
+                                        <img src="./img/twi-dark.png" alt="twitter icon"></a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="/img/m-dark.png" alt="Medium icon"></a>
+                                            <img src="./img/m-dark.png" alt="Medium icon"></a>
                                         </li>
                                     </ul>
                                 </div>  
