@@ -784,10 +784,11 @@ label {
   }
 
   .icon {
-    width: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    align-items: center;
   }
 
   .recent-work {
@@ -943,17 +944,19 @@ label {
   }
 
   ul.menu {
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
-    column-gap: 30%;
+    column-gap: 20%;
     margin-left: 3%;
   }
 
   .lang {
     align-content: center;
     align-items: flex-start;
+    margin-right: 0;
   }
 
   ul.lang {
@@ -962,7 +965,7 @@ label {
   }
 
   .fo {
-    margin-left: -1%;
+    margin: 0;
   }
 
   .contact {
@@ -1083,6 +1086,10 @@ label {
 
   .card5 .link-button2 {
     display: none;
+  }
+
+  .ko {
+    margin-left: -5%;
   }
 
   .card6 .link-button2 {
