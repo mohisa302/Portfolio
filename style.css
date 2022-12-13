@@ -130,12 +130,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  transition-duration: 3s;
-}
-
-.icon:hover {
-  width: 150%;
-  height: 150%;
 }
 
 .icon2 {
@@ -652,6 +646,9 @@ li {
   background: #dbd8d7;
 }
 
+.label-form {
+  visibility: hidden;
+}
 .form-text2 {
   width: 100%;
   height: 150px;
