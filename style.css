@@ -704,9 +704,9 @@ label {
 .link-button2:hover,
 .resume:hover,
 .sub-bot:hover {
-  color: blue;
-  background: wheat;
-  border: blue;
+  color: oldlace;
+  background: blue;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
