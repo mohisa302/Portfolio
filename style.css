@@ -130,12 +130,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  transition-duration: 3s;
-}
-
-.icon:hover {
-  width: 150%;
-  height: 150%;
 }
 
 .icon2 {
@@ -652,6 +646,10 @@ li {
   background: #dbd8d7;
 }
 
+.label-form {
+  visibility: hidden;
+}
+
 .form-text2 {
   width: 100%;
   height: 150px;
@@ -704,9 +702,9 @@ label {
 .link-button2:hover,
 .resume:hover,
 .sub-bot:hover {
-  color: blue;
-  background: wheat;
-  border: blue;
+  color: oldlace;
+  background: blue;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
