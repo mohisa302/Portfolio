@@ -311,12 +311,12 @@ ul {
   display: flex;
   align-items: center;
   margin-bottom: 10%;
-  margin-top: -4%;
   width: 327px;
   height: 48px;
   background: #ff6b00;
   border: none;
   transition-duration: 2s;
+  justify-content: center;
 }
 
 .ltext1 {
@@ -361,8 +361,9 @@ ul {
 
 a:link,
 a:visited,
-a:active { 
+a:active {
   color: white; 
+  text-decoration: none;
 }
 
 .menu-line {
@@ -497,10 +498,6 @@ a:active {
   width: 95px;
   height: 40px;
   background: rgba(255, 255, 255, 0.24);
-}
-
-a {
-  text-decoration: none;
 }
 
 .button3 {
