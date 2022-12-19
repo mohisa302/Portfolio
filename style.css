@@ -34,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 590;
+  height: 590px;
   width: 100%;
   z-index: 1;
 }
@@ -177,7 +177,6 @@ ul {
   margin-left: 10%;
   margin-right: 10%;
   display: grid;
-  grid-template-rows: repeat(8, 12.5);
 }
 
 .work-img {
@@ -357,11 +356,21 @@ ul {
   font-style: normal;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 8px;
+}
+
+a:link, 
+a:visited,
+a:active { color: white; 
 }
 
 .menu-line {
   margin-right: 24px;
+}
+
+.humberger {
+  margin-top: 18px;
+  margin-right: 10px;
 }
 
 .close-icon {
@@ -372,7 +381,7 @@ ul {
 .open {
   display: flex;
   flex-direction: column;
-  row-gap: 28px;
+  row-gap: 16px;
 }
 
 .card {
