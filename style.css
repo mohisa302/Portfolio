@@ -325,14 +325,28 @@ ul {
 }
 
 .menu-click {
-  width: 100%;
+  width: 373px;
   height: 100vh;
-  display: absolute;
+  position: absolute;
   left: 0;
   top: 0;
   background-color: #212121;
   z-index: 10;
+  display: none;
 }
+
+.close-icon{
+  height: 18px;
+  width: 18px;
+}
+
+.open{
+  display: block;
+}
+
+/*.close{
+  display: none;
+}*/
 
 .card {
   background: linear-gradient(
