@@ -22,7 +22,7 @@ body {
   align-self: center;
   align-content: center;
   justify-content: space-between;
-  width: 373px;
+  width: 100%;
   background: #3c3a39;
 }
 
@@ -30,18 +30,19 @@ body {
   row-gap: 1px;
   background-image: url("./img/back2.png");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 590;
-  width: 379px;
+  width: 100%;
   z-index: 1;
 }
 
 main {
   padding: 0;
   margin: 0;
-  width: 375px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -49,7 +50,7 @@ main {
 }
 
 .main-title {
-  width: 327px;
+  width: 100%;
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -142,7 +143,7 @@ ul {
 }
 
 .recent-work {
-  width: 327px;
+  width: 100%;
 }
 
 .recent-header {
@@ -161,8 +162,8 @@ ul {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  align-items: center;
   color: #1c1a19;
+  align-self: center;
 }
 
 .line {
@@ -173,16 +174,19 @@ ul {
 }
 
 .Works {
+  margin-left: 10%;
+  margin-right: 10%;
   display: grid;
   grid-template-rows: repeat(8, 12.5);
 }
 
 .work-img {
   display: flex;
-  width: 327px;
+  width: 100%;
   height: 237px;
   order: 0;
   align-items: center;
+  margin-right: 10%;
   align-self: center;
   transition-duration: 2s;
 }
@@ -219,7 +223,9 @@ ul {
 
 .about-text-part {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
+  margin-left: 5%;
 }
 
 .bottun {
@@ -306,6 +312,7 @@ ul {
   display: flex;
   align-items: center;
   margin-bottom: 10%;
+  margin-top: -4%;
   width: 327px;
   height: 48px;
   background: #ff6b00;
@@ -325,7 +332,7 @@ ul {
 }
 
 .menu-click {
-  width: 373px;
+  width: 100%;
   height: 100vh;
   position: absolute;
   left: 0;
@@ -335,18 +342,28 @@ ul {
   display: none;
 }
 
-.close-icon{
+.close-container {
+  align-self: flex-end;
+}
+
+.menu-text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.close-icon {
   height: 18px;
   width: 18px;
 }
 
-.open{
-  display: block;
+.open {
+  display: flex;
+  flex-direction: column;
 }
-
-/*.close{
-  display: none;
-}*/
 
 .card {
   background: linear-gradient(
@@ -359,6 +376,7 @@ ul {
   line-height: 75px;
   background-size: 327px 386px;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-content: center;
 }
@@ -485,14 +503,14 @@ a {
 .About-myself {
   display: flex;
   flex-direction: column;
-  width: 375px;
+  width: 100%;
   background: #1c1a19;
   height: 1000;
   padding-bottom: 5%;
 }
 
 .about-text {
-  width: 327px;
+  width: 100%;
   height: 78px;
   font-family: "Crete Round", serif;
   font-style: normal;
@@ -506,7 +524,6 @@ a {
 }
 
 .regular-text2 {
-  align-self: center;
   width: 327px;
   height: 148px;
   font-family: "Inter", serif;
@@ -531,7 +548,6 @@ a {
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  margin-left: 6%;
   transition-duration: 2s;
 }
 
@@ -551,7 +567,7 @@ a {
   padding: 0;
   row-gap: 30px;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 10%;
 }
 
 .titr {
@@ -579,10 +595,9 @@ li {
 
 .ico {
   display: flex;
-  column-gap: 10px;
   align-self: center;
   align-content: center;
-  margin-left: 44px;
+  margin-left: 20%;
   align-items: center;
 }
 
@@ -760,7 +775,7 @@ label {
     display: flex;
     padding-left: 5%;
     color: #fff;
-    width: 350px;
+    width: 100%;
     height: 47px;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -820,7 +835,16 @@ label {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    margin: 0;
     align-items: center;
+  }
+
+  .shape3 {
+    margin-left: 0;
+  }
+
+  .ico {
+    margin: 0;
   }
 
   .recent-work {
@@ -848,6 +872,7 @@ label {
     grid-template-columns: 387px 384px 369px;
     grid-template-rows: 663px 321px 622px;
     align-items: center;
+    margin-left: 0;
   }
 
   .regular-text {
@@ -982,7 +1007,7 @@ label {
     display: flex;
     flex-direction: row;
     column-gap: 20%;
-    margin-left: 3%;
+    margin-left: 5%;
   }
 
   .lang {
@@ -993,23 +1018,20 @@ label {
 
   ul.lang {
     align-content: center;
-    margin-left: 20%;
-  }
-
-  .fo {
-    margin: 0;
   }
 
   .contact {
     align-self: center;
     padding: 0;
+    width: 100%;
     margin: 0;
     display: grid;
     grid-template-columns: 390px 613px 100px 100px;
     grid-template-rows: 550px 10px 50px;
     align-items: start;
-    justify-content: start;
     margin-top: 10%;
+    justify-content: start;
+    margin-left: 10%;
   }
 
   .contact-text {
