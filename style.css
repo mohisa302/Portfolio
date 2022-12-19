@@ -362,7 +362,7 @@ ul {
 a:link,
 a:visited,
 a:active {
-  color: white; 
+  color: white;
   text-decoration: none;
 }
 
@@ -826,11 +826,10 @@ label {
     line-height: 20px;
     color: #fff;
     column-gap: 30px;
-    justify-content: space-around;
-    margin-right: 70px;
     display: flex;
     text-align: center;
     align-self: center;
+    margin-left:50%;
   }
 
   .union {
