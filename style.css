@@ -343,6 +343,8 @@ ul {
 }
 
 .close-container {
+  margin-top: 30px;
+  margin-right: 38px;
   align-self: flex-end;
 }
 
@@ -353,6 +355,13 @@ ul {
   color: #fff5e1;
   font-family: "Inter", sans-serif;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.menu-line {
+  margin-right: 24px;
 }
 
 .close-icon {
@@ -363,6 +372,7 @@ ul {
 .open {
   display: flex;
   flex-direction: column;
+  row-gap: 28px;
 }
 
 .card {
