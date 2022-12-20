@@ -72,7 +72,7 @@ projectsData.forEach((project) => {
   } = project;
 
   cardsContainer.innerHTML += `
-  <div class="card card${id}">
+  <div class="card card1">
     <title class="cardt">${name}</title>
     <title class="cardt-des">Data</title>
     <title class="cardt-des">Healthcare</title>

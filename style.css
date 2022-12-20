@@ -174,7 +174,7 @@ ul {
   margin-bottom: 20%;
 }
 
-.Works {
+.cards-container {
   margin-left: 10%;
   margin-right: 10%;
   display: grid;
@@ -755,6 +755,10 @@ label {
   text-align: right;
 }
 
+.link-button2:hover {
+
+}
+
 .link-button:hover,
 .link-button2:hover,
 .resume:hover,
@@ -1104,7 +1108,6 @@ label {
     justify-content: flex-end;
     align-content: center;
     row-gap: 20px;
-
   }
 
   .cardb {
