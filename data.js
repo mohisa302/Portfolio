@@ -4,7 +4,7 @@ const projectsData = [
     name: 'Profesional Art Printing Data',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-    featuredImage: 'img/card2.jpg',
+    featuredImage: './img/card2.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: 'see project',
@@ -13,7 +13,7 @@ const projectsData = [
   {
     id: 2,
     name: 'Multi-post stories',
-    featuredImage: 'img/card3.jpg',
+    featuredImage: './img/card3.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: 'see project',
@@ -24,7 +24,7 @@ const projectsData = [
     name: 'Profesional Art Printing Data',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-    featuredImage: 'img/card4.jpg',
+    featuredImage: './img/card4.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: 'see project',
@@ -33,7 +33,7 @@ const projectsData = [
   {
     id: 4,
     name: 'Multi-post stories',
-    featuredImage: 'img/card4.jpg',
+    featuredImage: './img/card4.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: 'see project',
@@ -42,7 +42,7 @@ const projectsData = [
   {
     id: 5,
     name: 'Multi-post stories',
-    featuredImage: 'img/card3.jpg',
+    featuredImage: './img/card3.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: 'see project',
@@ -51,7 +51,7 @@ const projectsData = [
   {
     id: 6,
     name: 'Multi-post stories',
-    featuredImage: 'img/card4.jpg',
+    featuredImage: './img/card4.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: 'see project',
@@ -89,9 +89,38 @@ projectsData.forEach((project) => {
       <li class="bot button2">${technologies[2]}</li>
       <li class="bot button3">${technologies[1]}</li>
     </ul>
-    <button class="link-button2" type="button">
+    <button class="link-button2 pop-class" type="button">
       <a class="ltext1" href="#">${button}</a>
     </button>
+    <!-- modal -->
+    <div class="hide modal">
+    <h3>${name}</h3>
+    <ul class="cardb">
+      <li class="bot button1">${technologies[0]}</li>
+      <li class="bot button2">${technologies[2]}</li>
+      <li class="bot button3">${technologies[1]}</li>
+    </ul>
+    <img src=${featuredImage} alt="project image" class="pop-window"/>
+    <p class="modal-text">
+    ${description}
+    </p>
+    <button class="link-button" type="button">
+      <a class="ltext1" href="#">${button}</a>
+    </button>
+    </div>
   </div>
+
   `;
+});
+
+const openPopupButton = document.querySelectorAll('.pop-class');
+const modals = document.querySelectorAll('.modal');
+
+
+openPopupButton.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    modals.forEach((modal) => {
+      modal.classList.toggle('hide');
+    });
+  });
 });
