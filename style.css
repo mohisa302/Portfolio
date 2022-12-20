@@ -763,6 +763,29 @@ label {
   border: none;
 }
 
+.window {
+  position: fixed;
+  border: 1px solid #ff6b00;
+  z-index: 10;
+  background-color: white;
+  width: 90%;
+  height:  718px;
+}
+
+.window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-header .close-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+}
+
 @media screen and (min-width: 768px) {
   main {
     width: 100%;
