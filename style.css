@@ -764,6 +764,7 @@ label {
   border: none;
 }
 
+
 @media screen and (min-width: 768px) {
   main {
     width: 100%;
@@ -876,7 +877,7 @@ label {
     justify-content: flex-start;
   }
 
-  .Works {
+  .cards-container {
     align-self: center;
     display: grid;
     padding: 0;
@@ -1099,8 +1100,11 @@ label {
     line-height: 75px;
     background-size: 369px 435px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-end;
     align-content: center;
+    row-gap: 20px;
+
   }
 
   .cardb {

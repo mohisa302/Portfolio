@@ -86,8 +86,8 @@ projectsData.forEach((project) => {
     </p>
     <ul class="cardb">
       <li class="bot button1">${technologies[0]}</li>
-      <li class="bot button2">${technologies[1]}</li>
-      <li class="bot button3">${technologies[2]}</li>
+      <li class="bot button2">${technologies[2]}</li>
+      <li class="bot button3">${technologies[1]}</li>
     </ul>
     <button class="link-button2" type="button">
       <a class="ltext1" href="#">${button}</a>
