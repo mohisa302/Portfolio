@@ -187,6 +187,9 @@ const closePopupButtons = document.querySelectorAll('.cross-icon');
 
 openPopupButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
+    modals.forEach((modal) => {
+      modal.classList.remove('show-modal');
+    });
     modals[index].classList.add('show-modal');
   });
 });
