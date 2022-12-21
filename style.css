@@ -187,6 +187,7 @@ ul {
   border: #091e42 solid 2px;
   flex-direction: column;
   background-color: white; 
+  height: 200px;
 }
 
 .modal-text {

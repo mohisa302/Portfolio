@@ -89,38 +89,28 @@ projectsData.forEach((project) => {
       <li class="bot button2">${technologies[2]}</li>
       <li class="bot button3">${technologies[1]}</li>
     </ul>
-    <button class="link-button2 pop-class" type="button">
-      <a class="ltext1" href="#">${button}</a>
-    </button>
+
+    <button class="ltext1 link-button2 pop-class">${button}</button>
+
     <!-- modal -->
     <div class="hide modal">
-    <h3>${name}</h3>
-    <ul class="cardb">
-      <li class="bot button1">${technologies[0]}</li>
-      <li class="bot button2">${technologies[2]}</li>
-      <li class="bot button3">${technologies[1]}</li>
-    </ul>
-    <img src=${featuredImage} alt="project image" class="pop-window"/>
-    <p class="modal-text">
-    ${description}
-    </p>
-    <button class="link-button" type="button">
-      <a class="ltext1" href="#">${button}</a>
-    </button>
+      <h3>${name}</h3>
+      <ul class="cardb">
+        <li class="bot button1">${technologies[0]}</li>
+        <li class="bot button2">${technologies[2]}</li>
+        <li class="bot button3">${technologies[1]}</li>
+      </ul>
+      <img src=${featuredImage} alt="project image" class="pop-window"/>
+      <p class="modal-text">
+      ${description}
+      </p>
+      <button class="link-button" type="button">
+        <a class="ltext1" href="#">${button}</a>
+      </button>
     </div>
   </div>
 
   `;
 });
 
-const openPopupButton = document.querySelectorAll('.pop-class');
-const modals = document.querySelectorAll('.modal');
 
-
-openPopupButton.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    modals.forEach((modal) => {
-      modal.classList.toggle('hide');
-    });
-  });
-});
