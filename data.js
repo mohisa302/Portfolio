@@ -7,7 +7,7 @@ const projectsData = [
     featuredImage: './img/img1.png',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    button: 'see project',
+    button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'Bootstrap', 'Ruby'],
   },
   {
@@ -18,7 +18,7 @@ const projectsData = [
     featuredImage: './img/card2.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-    button: 'see project',
+    button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
   },
   {
@@ -27,7 +27,7 @@ const projectsData = [
     featuredImage: './img/card3.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-    button: 'see project',
+      button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
   },
   {
@@ -38,7 +38,7 @@ const projectsData = [
     featuredImage: './img/card4.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-    button: 'see project',
+    button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
   },
   {
@@ -47,7 +47,7 @@ const projectsData = [
     featuredImage: './img/card4.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-    button: 'see project',
+    button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
   },
   {
@@ -56,7 +56,7 @@ const projectsData = [
     featuredImage: './img/card3.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-    button: 'see project',
+    button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
   },
   {
@@ -65,7 +65,7 @@ const projectsData = [
     featuredImage: './img/card4.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-    button: 'see project',
+    button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
   },
 ];
@@ -98,7 +98,7 @@ cardsContainer.innerHTML = `<div class="work1">
   <nav class="icon1">${projectsData[0].technologies[3]}</nav>
   </li>
   </ul>
-  <button class="link-button pop-class ltext1" type="button"> ${projectsData[0].button} </button>
+  <button class="link-button pop-class ltext1" type="button"> ${projectsData[0].button[2]} </button>
   </div>
 
     <!-- modal -->  
@@ -106,7 +106,7 @@ cardsContainer.innerHTML = `<div class="work1">
     <div class="modal-content">
       <div class="modal-header">
        <h3>${projectsData[0].name}</h3>
-       <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
+       <img src="./img/blackcross.png" alt="cross icon" class="cross-icon">
       </div>
       <ul class="cardb">
         <li class="bot button1">${projectsData[0].technologies[0]}</li>
@@ -119,7 +119,10 @@ cardsContainer.innerHTML = `<div class="work1">
         <p class="modal-text">
           ${projectsData[0].description}
         </p>
-        <button class="link-button ltext1" type="button">${projectsData[0].button}</button>
+        <div class="pop-btn">
+        <button class="link-button ltext1" type="button">${projectsData[0].button[0]}<img class="btn-icon" src="./img/malesymbol.png"/></button>
+        <button class="link-button ltext1" type="button">${projectsData[0].button[1]}<img class="btn-icon" src="./img/icon1.png"/></button>
+        </div>
         </div>
         </div>
       </div>
@@ -154,14 +157,14 @@ projectsData.forEach((project, index) => {
       <li class="button2">${technologies[2]}</li>
       <li class="button3">${technologies[1]}</li>
     </ul>-->
-      <button class="ltext1 link-button2 pop-class" type="button">${button}</button>
+      <button class="ltext1 link-button2 pop-class" type="button">${button[2]}</button>
 
     <!-- modal -->
   <div class='modal-wrapper'>  
     <div class="modal-content ">
     <div class="modal-header">
     <h3>${name}</h3>
-    <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
+    <img src="./img/blackcross.png" alt="cross icon" class="cross-icon">
     </div>
     <ul class="cardb">
       <li class="bot button1">${technologies[0]}</li>
@@ -174,7 +177,10 @@ projectsData.forEach((project, index) => {
     <p class="modal-text">
     ${description}
     </p>
-      <button class="link-button ltext1" type="button">${button}</button>
+    <div class="pop-btn">
+    <button class="link-button ltext1" type="button">${button[0]}<img class="btn-icon" src="./img/malesymbol.png"/></button>
+    <button class="link-button ltext1" type="button">${button[1]}<img class="btn-icon" src="./img/icon1.png"/></button>
+    </div>
       </div>
       </div>
       </div>
@@ -185,7 +191,7 @@ projectsData.forEach((project, index) => {
 
 const openPopupButton = document.querySelectorAll('.pop-class');
 const modals = document.querySelectorAll('.modal-wrapper');
-const closePopupButtons = document.querySelectorAll('.close-icon');
+const closePopupButtons = document.querySelectorAll('.cross-icon');
 
 openPopupButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
