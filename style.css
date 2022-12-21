@@ -193,7 +193,7 @@ ul {
 }
 
 .modal {
-  display: grid;
+  display: flex;
   border: #091e42 solid 2px;
   background-color: rgb(143, 35, 35); 
   flex-direction: column;
@@ -1157,9 +1157,9 @@ label {
     margin: 27px 0 5px 14px;
   }
 
-  .card1 .cardb {
+  /* .card1 .cardb {
     display: none;
-  }
+  } */
 
   .cardp {
     display: none;

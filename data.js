@@ -100,8 +100,8 @@ cardsContainer.innerHTML =
   </ul>
   <button class="link-button pop-class ltext1" type="button"> ${projectsData[0].button} </button>
   </div>
-    <div class="modal-wrapper modal-content">
-    <div class="modal hide">
+    <div class="modal-wrapper">
+    <div class="modal hide modal-content">
       <h3>${projectsData[0].name}</h3>
       <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
       <ul class="cardb">
@@ -141,15 +141,15 @@ projectsData.forEach((project, index) => {
       accounts or sign-ups required. has been the industry's
       standard
     </p>
-    <ul class="cardb">
-      <li class="bot button1">${technologies[0]}</li>
-      <li class="bot button2">${technologies[2]}</li>
-      <li class="bot button3">${technologies[1]}</li>
-    </ul>
+    <!--<ul class="cardb">
+      <li class="button1">${technologies[0]}</li>
+      <li class="button2">${technologies[2]}</li>
+      <li class="button3">${technologies[1]}</li>
+    </ul>-->
       <button class="ltext1 link-button2 pop-class" type="button">${button}</button>
     <!-- modal -->
   <div class='modal-wrapper'>  
-    <div class="modal hide">
+    <div class="modal modal-content hide">
     <h3>${name}</h3>
     <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
     <ul class="cardb">
@@ -176,6 +176,7 @@ openPopupButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     console.log(index)
     modals[index].classList.remove('hide');
+
   });
 });
 
