@@ -5,7 +5,8 @@ const projectsData = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     featuredImage: './img/img1.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     button: 'see project',
     technologies: ['html', 'css', 'Bootstrap', 'Ruby'],
   },
@@ -72,8 +73,7 @@ const projectsData = [
 const cardsContainer = document.querySelector('.cards-container');
 const workContainer = document.querySelector('.recent-work');
 
-cardsContainer.innerHTML = 
-`<div class="work1">
+cardsContainer.innerHTML = `<div class="work1">
 <img
   class="work-img"
   src= ${projectsData[0].featuredImage}
@@ -100,8 +100,10 @@ cardsContainer.innerHTML =
   </ul>
   <button class="link-button pop-class ltext1" type="button"> ${projectsData[0].button} </button>
   </div>
+
+    <!-- modal -->  
     <div class="modal-wrapper">
-    <div class="modal hide">
+    <div class="modal-content">
       <div class="modal-header">
        <h3>${projectsData[0].name}</h3>
        <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
@@ -122,7 +124,7 @@ cardsContainer.innerHTML =
         </div>
       </div>
   </div>`;
-  
+
 projectsData.forEach((project, index) => {
   if (index > 0) {
     const {
@@ -153,9 +155,10 @@ projectsData.forEach((project, index) => {
       <li class="button3">${technologies[1]}</li>
     </ul>-->
       <button class="ltext1 link-button2 pop-class" type="button">${button}</button>
+
     <!-- modal -->
   <div class='modal-wrapper'>  
-    <div class="modal modal-content hide">
+    <div class="modal-content ">
     <div class="modal-header">
     <h3>${name}</h3>
     <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
@@ -181,17 +184,19 @@ projectsData.forEach((project, index) => {
 });
 
 const openPopupButton = document.querySelectorAll('.pop-class');
-const modals = document.querySelectorAll('.modal');
-const closeBtnPop = document.querySelectorAll('.close-icon');
+const modals = document.querySelectorAll('.modal-wrapper');
+const closePopupButtons = document.querySelectorAll('.close-icon');
 
 openPopupButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    modals[index].classList.remove('hide');
+    modals[index].classList.add('show-modal');
+    console.log(modals[index]);
   });
 });
 
-closeBtnPop.forEach((btn, index) => {
+closePopupButtons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    modals[index].classList.add('hide');
-  });
-});
+    modals[index].classList.remove('show-modal')
+    console.log(modals[index]);
+  })
+})

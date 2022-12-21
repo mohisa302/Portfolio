@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap');
 
 html {
   box-sizing: border-box;
@@ -28,7 +28,7 @@ body {
 
 .page1 {
   row-gap: 1px;
-  background-image: url("./img/back2.png");
+  background-image: url('./img/back2.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
@@ -52,7 +52,7 @@ main {
 
 .main-title {
   width: 100%;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -63,7 +63,7 @@ main {
 }
 
 .job-title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -86,7 +86,7 @@ main {
 
 .regular-text {
   width: 327px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -104,7 +104,7 @@ main {
   text-align: center;
   color: #fff;
   padding-left: 5%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   align-self: center;
 }
@@ -158,7 +158,7 @@ ul {
 .works_header-text {
   width: 327px;
   height: 83px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -180,27 +180,25 @@ ul {
   display: grid;
 }
 
-.modal-wrapper{
-  position: absolute;
-  left: 0;
-  top:0;
+.modal-wrapper {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  flex-direction: column;
-  place-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #5252c5;
+  display: none;
+  z-index: 100;
 }
 
-.modal {
+.modal-content{
+  background: green;
+}
+
+.show-modal {
   display: flex;
-  border: #091e42 solid 2px;
-  background-color: white;
-  flex-direction: column;
-  z-index: 12;
-  width: 80%;
-  height:90%;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .modal-header {
@@ -227,10 +225,6 @@ ul {
   color: #344563;
 }
 
-.hide {
-  display: none;
-}
-
 .pop-window {
   width: 60vh;
   height: 49vh;
@@ -255,7 +249,7 @@ ul {
 .wtext1 {
   width: 327px;
   height: 36px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -268,7 +262,7 @@ ul {
 .wtext2 {
   width: 327px;
   height: 147px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -295,7 +289,7 @@ ul {
   text-align: center;
   width: 25px;
   height: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -371,9 +365,9 @@ ul {
 }
 
 .modal-con {
- display: flex;
- flex-direction: row;
- column-gap: 5%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5%;
 }
 
 .link-button2 {
@@ -390,7 +384,7 @@ ul {
 
 .ltext1 {
   display: flex;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -421,7 +415,7 @@ ul {
   font-size: 32px;
   line-height: 44px;
   color: #fff5e1;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   display: flex;
   flex-direction: column;
@@ -447,6 +441,7 @@ a:active {
 .close-icon {
   height: 18px;
   width: 18px;
+  cursor: pointer;
 }
 
 .open {
@@ -457,7 +452,12 @@ a:active {
 
 .card {
   /*position: relative;*/
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./img/img2.png");
+  background: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url('./img/img2.png');
   background-repeat: no-repeat;
   line-height: 75px;
   background-size: 327px 386px;
@@ -503,7 +503,7 @@ a:active {
   display: flex;
   width: 295px;
   height: 81px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -518,7 +518,7 @@ a:active {
   padding-left: 5%;
   width: 295px;
   height: 87px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -539,7 +539,7 @@ a:active {
 
 .bot {
   display: flex;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -593,7 +593,7 @@ a:active {
 .about-text {
   width: 100%;
   height: 78px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   align-self: center;
   font-weight: 400;
@@ -607,7 +607,7 @@ a:active {
 .regular-text2 {
   width: 327px;
   height: 148px;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -623,7 +623,7 @@ a:active {
   background: #ff6b00;
   color: #fff;
   border: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -655,7 +655,7 @@ a:active {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   display: flex;
   align-items: center;
 }
@@ -707,7 +707,7 @@ li {
   display: flex;
   align-items: center;
   text-align: center;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
 }
 
 .desktop-header {
@@ -739,7 +739,7 @@ li {
   padding-top: 10%;
   width: 327px;
   height: 216px;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -750,7 +750,7 @@ li {
 
 .form-text {
   outline: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -785,7 +785,7 @@ li {
   border-radius: 4px;
   resize: none;
   outline: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -837,7 +837,6 @@ label {
   border: none;
 }
 
-
 @media screen and (min-width: 768px) {
   main {
     width: 100%;
@@ -846,7 +845,7 @@ label {
   }
 
   .page1 {
-    background-image: url("./img/desktop-ver.png");
+    background-image: url('./img/desktop-ver.png');
     margin: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -857,13 +856,23 @@ label {
     justify-content: left;
   }
 
+  .modal-wrapper {
+    display: none;
+    height: auto;
+  }
+
+  .modal-content {
+    height: 80%;
+    width: 70%;
+  }
+
   .cardp-des {
     display: flex;
     padding-left: 5%;
     color: #fff;
     width: 100%;
     height: 47px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -894,7 +903,7 @@ label {
 
   .desktop-header {
     height: 20px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -955,7 +964,7 @@ label {
     display: flex;
     flex-direction: row;
     column-gap: 5%;
-   }
+  }
 
   .cards-container {
     align-self: center;
@@ -1046,7 +1055,7 @@ label {
     align-self: center;
     padding: 0;
     margin: 0;
-    background-image: url("./img/about.png");
+    background-image: url('./img/about.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -1151,7 +1160,12 @@ label {
 
   .card2,
   .card5 {
-    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./img/card3.png");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url('./img/card3.png');
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 369px 435px;
@@ -1164,7 +1178,7 @@ label {
   .card3,
   .card4,
   .card6 {
-    background: url("./img/card4.png");
+    background: url('./img/card4.png');
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 369px 435px;
@@ -1175,7 +1189,7 @@ label {
   }
 
   .card1 {
-    background: url("./img/card2.png");
+    background: url('./img/card2.png');
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 369px 435px;
@@ -1223,7 +1237,7 @@ label {
     display: flex;
     width: 100%;
     height: 40px;
-    font-family: "Crete Round", serif;
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
