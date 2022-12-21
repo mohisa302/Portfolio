@@ -199,7 +199,7 @@ ul {
   flex-direction: column;
   z-index: 12;
   width: 80%;
-  height: 80%;
+  height:90%;
   align-items: baseline;
 }
 
@@ -233,7 +233,7 @@ ul {
 
 .pop-window {
   width: 60vh;
-  height: 50vh;
+  height: 49vh;
 }
 
 .work-img {
@@ -367,10 +367,12 @@ ul {
 .modaltext {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .modal-con {
-display: flex;
+ display: flex;
+ flex-direction: row;
  column-gap: 5%;
 }
 
@@ -948,6 +950,12 @@ label {
     column-gap: 2%;
     justify-content: flex-start;
   }
+
+  .modal-con {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+   }
 
   .cards-container {
     align-self: center;
