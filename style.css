@@ -177,16 +177,18 @@ ul {
 .cards-container {
   margin-left: 10%;
   margin-right: 10%;
-  position: relative;
   display: grid;
 }
 
 .modal {
-  position: absolute;
   display: flex;
+  position: absolute;
   border: #091e42 solid 2px;
-  flex-direction: column;
   background-color: white; 
+  flex-direction: column;
+  z-index: 12;
+  width: 90vh;
+  height: 90vh;
 }
 
 .modal-text {
@@ -200,7 +202,7 @@ ul {
 }
 
 .hide {
-  display: none;
+  position: none;
 }
 
 .pop-window {
@@ -894,6 +896,7 @@ label {
 
   .recent-work {
     align-self: center;
+    position: relative;
     width: 100%;
     align-items: center;
     display: flex;
