@@ -101,19 +101,22 @@ cardsContainer.innerHTML = `            <div class="work1">
   <a class="ltext1" href="#"> ${projectsData[0].button} </a>
 </button>
 </div>
-<div class="modal hide">
-<h3>${projectsData[0].name}</h3>
-<img src="./img/blackcross.png" alt="cross icon" class="close-icon">
-<ul class="cardb">
-  <li class="bot button1">${projectsData[0].technologies[0]}</li>
-  <li class="bot button2">${projectsData[0].technologies[2]}</li>
-  <li class="bot button3">${projectsData[0].technologies[1]}</li>
-</ul>
-<img src=${projectsData[0].featuredImage} alt="project image" class="pop-window"/>
-<p class="modal-text">
-${projectsData[0].description}
-</p>
-  <button class="link-button ltext1" type="button">${projectsData[0].button}</button>
+
+<div class='modal-wrapper>
+  <div class="modal modal-content hide">
+    <h3>${projectsData[0].name}</h3>
+    <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
+    <ul class="cardb">
+      <li class="bot button1">${projectsData[0].technologies[0]}</li>
+      <li class="bot button2">${projectsData[0].technologies[2]}</li>
+      <li class="bot button3">${projectsData[0].technologies[1]}</li>
+    </ul>
+    <img src=${projectsData[0].featuredImage} alt="project image" class="pop-window"/>
+    <p class="modal-text">
+    ${projectsData[0].description}
+    </p>
+      <button class="link-button ltext1" type="button">${projectsData[0].button}</button>
+  </div>
 </div>`;
 
 projectsData.forEach((project, index) => {
@@ -147,20 +150,22 @@ projectsData.forEach((project, index) => {
     </ul>
       <button class="ltext1 link-button2 pop-class" type="button">${button}</button>
     <!-- modal -->
-  <div class="modal hide">
-  <h3>${name}</h3>
-  <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
-  <ul class="cardb">
-    <li class="bot button1">${technologies[0]}</li>
-    <li class="bot button2">${technologies[2]}</li>
-    <li class="bot button3">${technologies[1]}</li>
-  </ul>
-  <img src=${featuredImage} alt="project image" class="pop-window"/>
-  <p class="modal-text">
-  ${description}
-  </p>
-    <button class="link-button ltext1" type="button">${button}</button>
-  </div>
+  <div class='modal-wrapper'>  
+    <div class="modal hide">
+    <h3>${name}</h3>
+    <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
+    <ul class="cardb">
+      <li class="bot button1">${technologies[0]}</li>
+      <li class="bot button2">${technologies[2]}</li>
+      <li class="bot button3">${technologies[1]}</li>
+    </ul>
+    <img src=${featuredImage} alt="project image" class="pop-window"/>
+    <p class="modal-text">
+    ${description}
+    </p>
+      <button class="link-button ltext1" type="button">${button}</button>
+    </div>
+  </div>  
   `;
   }
 });

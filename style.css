@@ -180,15 +180,25 @@ ul {
   display: grid;
 }
 
+.modal-wrapper{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .modal {
   display: flex;
-  position: absolute;
   border: #091e42 solid 2px;
-  background-color: white; 
+  background-color: rgb(143, 35, 35); 
   flex-direction: column;
   z-index: 12;
-  width: 90vh;
-  height: 90vh;
+  width: 70%;
+  height: 70%;
 }
 
 .modal-text {
@@ -418,7 +428,7 @@ a:active {
 }
 
 .card {
-  position: relative;
+  /*position: relative;*/
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./img/img2.png");
   background-repeat: no-repeat;
   line-height: 75px;
@@ -786,9 +796,9 @@ label {
   text-align: right;
 }
 
-.link-button2:hover {
+/*.link-button2:hover {
 
-}
+}*/
 
 .link-button:hover,
 .link-button2:hover,
@@ -896,7 +906,7 @@ label {
 
   .recent-work {
     align-self: center;
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     align-items: center;
     display: flex;
