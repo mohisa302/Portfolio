@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap');
 
 html {
   box-sizing: border-box;
@@ -28,7 +28,7 @@ body {
 
 .page1 {
   row-gap: 1px;
-  background-image: url("./img/back2.png");
+  background-image: url('./img/back2.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
@@ -41,6 +41,7 @@ body {
 
 main {
   padding: 0;
+  position: relative;
   margin: 0;
   width: 100%;
   display: flex;
@@ -51,7 +52,7 @@ main {
 
 .main-title {
   width: 100%;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -62,7 +63,7 @@ main {
 }
 
 .job-title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -85,7 +86,7 @@ main {
 
 .regular-text {
   width: 327px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -103,7 +104,7 @@ main {
   text-align: center;
   color: #fff;
   padding-left: 5%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   align-self: center;
 }
@@ -157,7 +158,7 @@ ul {
 .works_header-text {
   width: 327px;
   height: 83px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -173,10 +174,54 @@ ul {
   margin-bottom: 20%;
 }
 
-.Works {
+.cards-container {
   margin-left: 10%;
   margin-right: 10%;
   display: grid;
+}
+
+.modal-wrapper {
+  width: 100vw;
+  height: 78vh;
+  backdrop-filter: blur(5px);
+  display: none;
+  padding-bottom: 10%;
+  z-index: 100;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: #1c1a19 solid 1px;
+  width: 80vw;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 44px;
+  margin-bottom: 10%;
+}
+
+.modal-text {
+  width: 311px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.pop-window {
+  width: 71vw;
+  height: 33vh;
+  margin-bottom: 1%;
 }
 
 .work-img {
@@ -198,7 +243,7 @@ ul {
 .wtext1 {
   width: 327px;
   height: 36px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -211,7 +256,7 @@ ul {
 .wtext2 {
   width: 327px;
   height: 147px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -238,7 +283,7 @@ ul {
   text-align: center;
   width: 25px;
   height: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -307,10 +352,28 @@ ul {
   transition-duration: 2s;
 }
 
+.pop-btn > .link-button {
+  width: 160px;
+}
+
+.modaltext {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-con {
+  display: flex;
+  flex-direction: column;
+  column-gap: 5%;
+  margin-left: 5%;
+}
+
 .link-button2 {
   display: flex;
   align-items: center;
-  margin-bottom: 10%;
   width: 327px;
   height: 48px;
   background: #ff6b00;
@@ -321,7 +384,7 @@ ul {
 
 .ltext1 {
   display: flex;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -352,7 +415,7 @@ ul {
   font-size: 32px;
   line-height: 44px;
   color: #fff5e1;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   display: flex;
   flex-direction: column;
@@ -375,9 +438,11 @@ a:active {
   margin-right: 10px;
 }
 
-.close-icon {
+.close-icon,
+.cross-icon {
   height: 18px;
   width: 18px;
+  cursor: pointer;
 }
 
 .open {
@@ -387,7 +452,7 @@ a:active {
 }
 
 .card {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./img/img2.png");
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('./img/img2.png');
   background-repeat: no-repeat;
   line-height: 75px;
   background-size: 327px 386px;
@@ -433,7 +498,7 @@ a:active {
   display: flex;
   width: 295px;
   height: 81px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -448,7 +513,7 @@ a:active {
   padding-left: 5%;
   width: 295px;
   height: 87px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -461,7 +526,7 @@ a:active {
   flex-direction: row;
   padding: 0;
   column-gap: 9px;
-  margin: -4px -1px 19px 3px;
+  margin: -57px 141px 6px 20px;
   text-align: center;
   align-content: center;
   align-items: center;
@@ -469,12 +534,12 @@ a:active {
 
 .bot {
   display: flex;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #fff;
+  border: #1c1a19 solid 1px;
   transition-duration: 2s;
 }
 
@@ -523,7 +588,7 @@ a:active {
 .about-text {
   width: 100%;
   height: 78px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   align-self: center;
   font-weight: 400;
@@ -537,7 +602,7 @@ a:active {
 .regular-text2 {
   width: 327px;
   height: 148px;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -553,7 +618,7 @@ a:active {
   background: #ff6b00;
   color: #fff;
   border: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -578,14 +643,13 @@ a:active {
   padding: 0;
   row-gap: 30px;
   align-items: center;
-  margin-right: 10%;
 }
 
 .titr {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   display: flex;
   align-items: center;
 }
@@ -608,7 +672,7 @@ li {
   display: flex;
   align-self: center;
   align-content: center;
-  margin-left: 20%;
+  justify-content: center;
   align-items: center;
 }
 
@@ -637,7 +701,7 @@ li {
   display: flex;
   align-items: center;
   text-align: center;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
 }
 
 .desktop-header {
@@ -656,7 +720,6 @@ li {
   height: 18px;
   background: #ff6b00;
   border-radius: 150px;
-  margin-left: 20px;
 }
 
 .contact {
@@ -665,11 +728,26 @@ li {
   row-gap: 20px;
 }
 
+.cross-icon {
+  margin-right: 5%;
+}
+
+.btn-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 5%;
+}
+
+.pop-btn {
+  display: flex;
+  column-gap: 5%;
+}
+
 .contact-text {
   padding-top: 10%;
   width: 327px;
   height: 216px;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -680,7 +758,7 @@ li {
 
 .form-text {
   outline: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -703,7 +781,7 @@ li {
 }
 
 .label-form {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .form-text2 {
@@ -715,7 +793,7 @@ li {
   border-radius: 4px;
   resize: none;
   outline: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -763,6 +841,14 @@ label {
   border: none;
 }
 
+.show-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+
 @media screen and (min-width: 768px) {
   main {
     width: 100%;
@@ -771,7 +857,7 @@ label {
   }
 
   .page1 {
-    background-image: url("./img/desktop-ver.png");
+    background-image: url('./img/desktop-ver.png');
     margin: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -782,13 +868,33 @@ label {
     justify-content: left;
   }
 
+  .modal-wrapper {
+    height: auto;
+    z-index: 100;
+  }
+
+  .modal-content {
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 75%;
+    row-gap: 5%;
+  }
+
+  .modal-con {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    column-gap: 5%;
+  }
+
   .cardp-des {
     display: flex;
     padding-left: 5%;
     color: #fff;
     width: 100%;
     height: 47px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -819,7 +925,7 @@ label {
 
   .desktop-header {
     height: 20px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -875,7 +981,7 @@ label {
     justify-content: flex-start;
   }
 
-  .Works {
+  .cards-container {
     align-self: center;
     display: grid;
     padding: 0;
@@ -944,6 +1050,12 @@ label {
     display: flex;
   }
 
+  .pop-window {
+    margin-left: 3%;
+    width: 75%;
+    height: 55vh;
+  }
+
   .link-button2 {
     display: flex;
     align-items: center;
@@ -964,7 +1076,7 @@ label {
     align-self: center;
     padding: 0;
     margin: 0;
-    background-image: url("./img/about.png");
+    background-image: url('./img/about.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -1069,7 +1181,7 @@ label {
 
   .card2,
   .card5 {
-    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./img/card3.png");
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url('./img/card3.png');
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 369px 435px;
@@ -1082,7 +1194,7 @@ label {
   .card3,
   .card4,
   .card6 {
-    background: url("./img/card4.png");
+    background: url('./img/card4.png');
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 369px 435px;
@@ -1093,21 +1205,19 @@ label {
   }
 
   .card1 {
-    background: url("./img/card2.png");
+    background: url('./img/card2.png');
     background-repeat: no-repeat;
     line-height: 75px;
     background-size: 369px 435px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-end;
     align-content: center;
+    row-gap: 20px;
   }
 
   .cardb {
-    margin: 27px 0 5px 14px;
-  }
-
-  .card1 .cardb {
-    display: none;
+    margin: -9px 1px 24px 36px;
   }
 
   .cardp {
@@ -1139,13 +1249,27 @@ label {
     display: flex;
     width: 100%;
     height: 40px;
-    font-family: "Crete Round", serif;
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
     color: #fff;
     padding-left: 5%;
+  }
+
+  .modaltext {
+    justify-content: space-between;
+  }
+
+  .modal-header > h3 {
+    margin-left: 3%;
+  }
+
+  .modal-header {
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
   }
 
   .card5 .link-button2 {
