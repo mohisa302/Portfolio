@@ -72,7 +72,8 @@ const projectsData = [
 const cardsContainer = document.querySelector('.cards-container');
 const workContainer = document.querySelector('.recent-work');
 
-cardsContainer.innerHTML = `            <div class="work1">
+cardsContainer.innerHTML = 
+`<div class="work1">
 <img
   class="work-img"
   src= ${projectsData[0].featuredImage}
@@ -88,37 +89,34 @@ cardsContainer.innerHTML = `            <div class="work1">
     <nav class="icon1">${projectsData[0].technologies[1]}</nav>
   </li>
   <li class="icon2-holder">
-    <nav class="icon1">${projectsData[0].technologies[0]}</nav>
+  <nav class="icon1">${projectsData[0].technologies[0]}</nav>
   </li>
   <li class="icon3-holder">
-    <nav class="icon1">${projectsData[0].technologies[2]}</nav>
+  <nav class="icon1">${projectsData[0].technologies[2]}</nav>
   </li>
   <li class="icon4-holder">
-    <nav class="icon1">${projectsData[0].technologies[3]}</nav>
+  <nav class="icon1">${projectsData[0].technologies[3]}</nav>
   </li>
-</ul>
-<button class="link-button pop-class" type="button">
-  <a class="ltext1" href="#"> ${projectsData[0].button} </a>
-</button>
-</div>
-
-<div class='modal-wrapper>
-  <div class="modal modal-content hide">
-    <h3>${projectsData[0].name}</h3>
-    <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
-    <ul class="cardb">
-      <li class="bot button1">${projectsData[0].technologies[0]}</li>
-      <li class="bot button2">${projectsData[0].technologies[2]}</li>
-      <li class="bot button3">${projectsData[0].technologies[1]}</li>
-    </ul>
-    <img src=${projectsData[0].featuredImage} alt="project image" class="pop-window"/>
-    <p class="modal-text">
-    ${projectsData[0].description}
-    </p>
-      <button class="link-button ltext1" type="button">${projectsData[0].button}</button>
+  </ul>
+  <button class="link-button pop-class ltext1" type="button"> ${projectsData[0].button} </button>
   </div>
-</div>`;
-
+    <div class="modal-wrapper modal-content">
+    <div class="modal hide">
+      <h3>${projectsData[0].name}</h3>
+      <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
+      <ul class="cardb">
+        <li class="bot button1">${projectsData[0].technologies[0]}</li>
+        <li class="bot button2">${projectsData[0].technologies[2]}</li>
+        <li class="bot button3">${projectsData[0].technologies[1]}</li>
+      </ul>
+      <img src=${projectsData[0].featuredImage} alt="project image" class="pop-window"/>
+      <p class="modal-text">
+       ${projectsData[0].description}
+      </p>
+      <button class="link-button ltext1" type="button">${projectsData[0].button}</button>
+</div>
+      </div>`;
+  
 projectsData.forEach((project, index) => {
   if (index > 0) {
     const {
@@ -176,6 +174,7 @@ const closeBtnPop = document.querySelector('.close-icon');
 
 openPopupButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
+    console.log(index)
     modals[index].classList.remove('hide');
   });
 });

@@ -187,12 +187,13 @@ ul {
   width: 100vw;
   height: 100vh;
   display: grid;
+  flex-direction: column;
   place-items: center;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .modal {
-  display: flex;
+  display: grid;
   border: #091e42 solid 2px;
   background-color: rgb(143, 35, 35); 
   flex-direction: column;
