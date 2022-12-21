@@ -101,21 +101,27 @@ cardsContainer.innerHTML =
   <button class="link-button pop-class ltext1" type="button"> ${projectsData[0].button} </button>
   </div>
     <div class="modal-wrapper">
-    <div class="modal hide modal-content">
-      <h3>${projectsData[0].name}</h3>
-      <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
+    <div class="modal hide">
+      <div class="modal-header">
+       <h3>${projectsData[0].name}</h3>
+       <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
+      </div>
       <ul class="cardb">
         <li class="bot button1">${projectsData[0].technologies[0]}</li>
         <li class="bot button2">${projectsData[0].technologies[2]}</li>
         <li class="bot button3">${projectsData[0].technologies[1]}</li>
       </ul>
-      <img src=${projectsData[0].featuredImage} alt="project image" class="pop-window"/>
-      <p class="modal-text">
-       ${projectsData[0].description}
-      </p>
-      <button class="link-button ltext1" type="button">${projectsData[0].button}</button>
-</div>
-      </div>`;
+      <div class="modal-con">
+        <img src=${projectsData[0].featuredImage} alt="project image" class="pop-window"/>  
+       <div class="modaltext">
+        <p class="modal-text">
+          ${projectsData[0].description}
+        </p>
+        <button class="link-button ltext1" type="button">${projectsData[0].button}</button>
+        </div>
+        </div>
+      </div>
+  </div>`;
   
 projectsData.forEach((project, index) => {
   if (index > 0) {
@@ -150,19 +156,25 @@ projectsData.forEach((project, index) => {
     <!-- modal -->
   <div class='modal-wrapper'>  
     <div class="modal modal-content hide">
+    <div class="modal-header">
     <h3>${name}</h3>
     <img src="./img/blackcross.png" alt="cross icon" class="close-icon">
+    </div>
     <ul class="cardb">
       <li class="bot button1">${technologies[0]}</li>
       <li class="bot button2">${technologies[2]}</li>
       <li class="bot button3">${technologies[1]}</li>
     </ul>
+    <div class="modal-con">
     <img src=${featuredImage} alt="project image" class="pop-window"/>
+    <div class="modaltext">
     <p class="modal-text">
     ${description}
     </p>
       <button class="link-button ltext1" type="button">${button}</button>
-    </div>
+      </div>
+      </div>
+      </div>
   </div>  
   `;
   }
@@ -170,13 +182,16 @@ projectsData.forEach((project, index) => {
 
 const openPopupButton = document.querySelectorAll('.pop-class');
 const modals = document.querySelectorAll('.modal');
-const closeBtnPop = document.querySelector('.close-icon');
+const closeBtnPop = document.querySelectorAll('.close-icon');
 
 openPopupButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    console.log(index)
     modals[index].classList.remove('hide');
-
   });
 });
 
+closeBtnPop.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    modals[index].classList.add('hide');
+  });
+});

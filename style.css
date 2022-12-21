@@ -195,11 +195,26 @@ ul {
 .modal {
   display: flex;
   border: #091e42 solid 2px;
-  background-color: rgb(143, 35, 35); 
+  background-color: white;
   flex-direction: column;
   z-index: 12;
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
+  align-items: baseline;
+}
+
+.modal-header {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1056px;
+  height: 40px;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .modal-text {
@@ -217,8 +232,8 @@ ul {
 }
 
 .pop-window {
-  width: 311px;
-  height: 220px;
+  width: 60vh;
+  height: 50vh;
 }
 
 .work-img {
@@ -347,6 +362,16 @@ ul {
   border: none;
   order: 4;
   transition-duration: 2s;
+}
+
+.modaltext {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-con {
+display: flex;
+ column-gap: 5%;
 }
 
 .link-button2 {
@@ -517,7 +542,7 @@ a:active {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #fff;
+  border: #1c1a19 solid 1px;
   transition-duration: 2s;
 }
 
