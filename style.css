@@ -847,7 +847,6 @@ label {
   align-items: center;
   position: absolute;
   left: 0;
-  top: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -877,8 +876,7 @@ label {
   .modal-content {
     flex-wrap: wrap;
     align-content: space-around;
-    height: 75%;
-    width: 70%;
+    width: 75%;
     row-gap: 5%;
   }
 
