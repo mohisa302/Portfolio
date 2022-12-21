@@ -5,7 +5,6 @@
   <img src="https://github.com/mohisa302/ReadMe/blob/master/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
 
 </div>
 
@@ -32,6 +31,7 @@
 - **using linters**
 - **both mobile and desktop version**
 - **online avaible**
+- **popup windows**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -48,13 +48,18 @@ you can know me from here...
 
 ## 👥 Authors <a name="authors"></a>
 
-@mohisa302
-
-👤 **Author1**
+👤 **mohi**
 
 - GitHub: [@mohisa302](https://github.com/mohisa302)
 - Twitter: [@Kholochelam](https://twitter.com/Kholochelam)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/mohadese-sadeghi-692551199/)
+
+👤 **Martin Karugaba**
+
+- GitHub: [@githubhandle](https://github.com/martinkarugaba)
+- Twitter: [@twitterhandle](https://twitter.com/martin_karugaba)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
 
 ## 🔭 Future Features <a name="future-features"></a>
 
