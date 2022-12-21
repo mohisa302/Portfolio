@@ -5,8 +5,6 @@ const projectsData = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     featuredImage: './img/img1.png',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'Bootstrap', 'Ruby'],
   },
@@ -16,8 +14,6 @@ const projectsData = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     featuredImage: './img/card2.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
   },
@@ -27,7 +23,7 @@ const projectsData = [
     featuredImage: './img/card3.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-      button: ['see live', 'see source', 'see project'],
+    button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
   },
   {
@@ -36,8 +32,6 @@ const projectsData = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     featuredImage: './img/card4.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
   },
@@ -71,7 +65,6 @@ const projectsData = [
 ];
 
 const cardsContainer = document.querySelector('.cards-container');
-const workContainer = document.querySelector('.recent-work');
 
 cardsContainer.innerHTML = `<div class="work1">
 <img
@@ -131,7 +124,6 @@ cardsContainer.innerHTML = `<div class="work1">
 projectsData.forEach((project, index) => {
   if (index > 0) {
     const {
-      id,
       name,
       featuredImage,
       description,
@@ -196,13 +188,11 @@ const closePopupButtons = document.querySelectorAll('.cross-icon');
 openPopupButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     modals[index].classList.add('show-modal');
-    console.log(modals[index]);
   });
 });
 
 closePopupButtons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    modals[index].classList.remove('show-modal')
-    console.log(modals[index]);
-  })
-})
+    modals[index].classList.remove('show-modal');
+  });
+});
