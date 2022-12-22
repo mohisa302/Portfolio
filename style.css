@@ -224,7 +224,6 @@ ul {
   margin-bottom: 1%;
 }
 
-
 .work-img {
   display: flex;
   width: 100%;
@@ -833,12 +832,12 @@ label {
   text-align: right;
 }
 
-.error-container{
+.error-container {
   display: none;
   color: #e74c3c;
 }
 
-.error{
+.error {
   display: block;
 }
 
