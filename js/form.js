@@ -1,29 +1,6 @@
 const contactForm = document.querySelector('.form-action');
 const error = document.querySelector('small');
 const formInput = document.querySelectorAll('.form-data');
-const form = {
-  fullName: "1",
-  email: "2",
-  comment: "3"
-};
-
-formInput.forEach((input, index) => {
-  input.addEventListener('change', (event) => {
-    form.fullName = formInput[0].value;
-    form.email = formInput[1].value;
-    form.comment = formInput[2].value;
-    localStorage.setItem("form", JSON.stringify(form));
-    console.log(localStorage);
-  });
-});
-
-window.onbeforeunload = function() {
-  localStorage.setItem("form", JSON.stringify(form));
-}
-
-window.onload = function () {
-  form = JSON.parse(localStorage.getItem("form"));
-}
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -34,4 +11,20 @@ contactForm.addEventListener('submit', (e) => {
   }
 });
 
+// put our information in an object
+let formInfo = {
+  userName: "",
+  email: "",
+  message: "",
+};
+
+formInput.forEach((input, index) => {
+  input.addEventListener('change', () => {
+    formInfo.username = formInput[0].value;
+    formInfo.email = formInput[1].value;
+    formInfo.message = formInput[2].value;
+    console.log(localStorage);
+  });
+  localStorage.setItem('form', JSON.stringify(formInfo));
+});
 
