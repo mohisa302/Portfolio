@@ -832,6 +832,15 @@ label {
   text-align: right;
 }
 
+.error-container {
+  display: none;
+  color: #e74c3c;
+}
+
+.error {
+  display: block;
+}
+
 .link-button:hover,
 .link-button2:hover,
 .resume:hover,
