@@ -224,6 +224,7 @@ ul {
   margin-bottom: 1%;
 }
 
+
 .work-img {
   display: flex;
   width: 100%;
@@ -830,6 +831,15 @@ label {
   flex-direction: column;
   width: 90px;
   text-align: right;
+}
+
+.error-container{
+  display: none;
+  color: #e74c3c;
+}
+
+.error{
+  display: block;
 }
 
 .link-button:hover,
