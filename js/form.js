@@ -28,13 +28,13 @@ contactForm.addEventListener('submit', (e) => {
 });
 
 const data = () => {
-  formData = JSON.parse(localStorage.getItem('form'))
- if (formData) {
-// add object properties input fields after reload
-  formInput[0].value = formData.fullName;
-  formInput[1].value = formData.email;
-  formInput[2].value = formData.comment;
-}
-}
+  form = JSON.parse(localStorage.getItem('form'));
+  if (form) {
+    // add object properties input fields after reload
+    formInput[0].value = form.fullName;
+    formInput[1].value = form.email;
+    formInput[2].value = form.comment;
+  }
+};
 
-window.addEventListener('DOMContentLoaded', data)
+window.addEventListener('DOMContentLoaded', data);
