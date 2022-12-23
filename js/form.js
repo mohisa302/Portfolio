@@ -3,7 +3,7 @@ const error = document.querySelector('small');
 const formInput = document.querySelectorAll('.form-data');
 const email = document.querySelector('#email');
 
-let form = {
+const form = {
   fullName: formInput[0].value,
   email: formInput[1].value,
   comment: formInput[2].value,
@@ -28,8 +28,8 @@ contactForm.addEventListener('submit', (e) => {
 });
 
 const data = () => {
-  let dataForm = JSON.parse(localStorage.getItem('form'));
-  if (localStorage.getItem('form')) {
+  const dataForm = JSON.parse(localStorage.getItem('form'));
+  if (localStorage.getItem('dataForm')) {
     // add object properties input fields after reload
     formInput[0].value = dataForm.fullName;
     formInput[1].value = dataForm.email;
