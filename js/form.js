@@ -29,7 +29,7 @@ contactForm.addEventListener('submit', (e) => {
 
 const data = () => {
   const dataForm = JSON.parse(localStorage.getItem('form'));
-  if (localStorage.getItem('dataForm')) {
+  if (dataForm) {
     // add object properties input fields after reload
     formInput[0].value = dataForm.fullName;
     formInput[1].value = dataForm.email;
