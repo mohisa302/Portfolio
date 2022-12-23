@@ -9,13 +9,6 @@ let form = {
   comment: formInput[2].value,
 };
 
-// add data base to object after reloading
-form = JSON.parse(localStorage.getItem('form'));
-// add object properties input fields after reload
-formInput[0].value = form.fullName;
-formInput[1].value = form.email;
-formInput[2].value = form.comment;
-
 formInput.forEach((input) => {
   input.addEventListener('change', () => {
     form.fullName = formInput[0].value;
@@ -33,3 +26,15 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.submit();
   }
 });
+
+const data = () => {
+  formData = JSON.parse(localStorage.getItem('form'))
+ if (formData) {
+// add object properties input fields after reload
+  formInput[0].value = formData.fullName;
+  formInput[1].value = formData.email;
+  formInput[2].value = formData.comment;
+}
+}
+
+window.addEventListener('DOMContentLoaded', data)
