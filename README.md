@@ -1,10 +1,9 @@
-
 <a name="readme-top"></a>
+
 <div align="center">
 
   <img src="https://github.com/mohisa302/ReadMe/blob/master/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
-
 
 </div>
 
@@ -23,11 +22,13 @@
 - [📝 License](#license)
 
 # 📖 [Protofilio] <a name="about-project"></a>
+
 **[Protofilio]** everything you want to know about me!
 
-
 ## 🛠 Built With <a name="built-with"></a>
+
 ### Key Features <a name="key-features"></a>
+
 - **using linters**
 - **both mobile and desktop version**
 - **online avaible**
@@ -35,16 +36,15 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+
 you can see my profile through this link:
-https://mohisa302.github.io/mohisa302.github.ico/
+https://mohisa302.github.io/Portfolio/
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## 💻 Getting Started <a name="getting-started"></a>
+
 you can know me from here...
-
-
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -60,7 +60,6 @@ you can know me from here...
 - Twitter: [@twitterhandle](https://twitter.com/martin_karugaba)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[will improve page elements]**
@@ -68,7 +67,6 @@ you can know me from here...
 - [ ] **[will add js]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 

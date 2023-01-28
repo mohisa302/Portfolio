@@ -7,6 +7,8 @@ const projectsData = [
     featuredImage: './img/img1.png',
     button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'Bootstrap', 'Ruby'],
+    liveLink: 'https://mohisa302.github.io/Portfolio/',
+    sourceLink: 'https://github.com/mohisa302/Portfolio',
   },
   {
     id: 1,
@@ -16,6 +18,7 @@ const projectsData = [
     featuredImage: './img/card2.png',
     button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
+    link: '#',
   },
   {
     id: 2,
@@ -25,6 +28,8 @@ const projectsData = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
     id: 3,
@@ -34,6 +39,8 @@ const projectsData = [
     featuredImage: './img/card4.png',
     button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
     id: 4,
@@ -43,6 +50,8 @@ const projectsData = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
     id: 5,
@@ -52,6 +61,8 @@ const projectsData = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
     id: 6,
@@ -61,6 +72,8 @@ const projectsData = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     button: ['see live', 'see source', 'see project'],
     technologies: ['html', 'css', 'javascript'],
+    liveLink: '#',
+    sourceLink: '#',
   },
 ];
 
@@ -113,8 +126,8 @@ cardsContainer.innerHTML = `<div class="work1">
           ${projectsData[0].description}
         </p>
         <div class="pop-btn">
-        <button class="link-button ltext1" type="button">${projectsData[0].button[0]}<img class="btn-icon" src="./img/malesymbol.png"/></button>
-        <button class="link-button ltext1" type="button">${projectsData[0].button[1]}<img class="btn-icon" src="./img/icon1.png"/></button>
+        <button class="link-button ltext1"  type="button"><a href=${projectsData[0].liveLink}>${projectsData[0].button[0]}<img class="btn-icon" src="./img/malesymbol.png"/></a></button>
+        <button class="link-button ltext1"  type="button"><a href=${projectsData[0].sourceLink}>${projectsData[0].button[1]}<img class="btn-icon" src="./img/icon1.png"/></a></button>
         </div>
         </div>
         </div>
@@ -123,13 +136,7 @@ cardsContainer.innerHTML = `<div class="work1">
 
 projectsData.forEach((project, index) => {
   if (index > 0) {
-    const {
-      name,
-      featuredImage,
-      description,
-      button,
-      technologies,
-    } = project;
+    const { name, featuredImage, description, button, technologies } = project;
 
     cardsContainer.innerHTML += `
   <div class="card card1">
